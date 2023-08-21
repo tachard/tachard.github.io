@@ -1,35 +1,25 @@
 [
   {
     "id": 1,
-    "title": "Test 1",
+    "title": "Portfolio",
     "cardImage": "",
-    "type": "",
+    "type": "Personnel",
     "place": "",
-    "begin": "",
+    "begin": "2023-08-19",
     "end": "",
     "company": "",
-    "overview": "",
-    "context": "",
-    "solution": "",
-    "results": "",
-    "takeaways": "",
-    "images": ["", "", ""]
+    "html":""
   },
   {
     "id": 2,
-    "title": "Test 2",
+    "title": "Stagiaire en informatique",
     "cardImage": "",
     "type": "",
     "place": "",
     "begin": "",
     "end": "",
     "company": "",
-    "overview": "",
-    "context": "",
-    "solution": "",
-    "results": "",
-    "takeaways": "",
-    "images": ["", "", ""]
+    "html":""
   },
   {
     "id": 3,
@@ -40,12 +30,7 @@
     "begin": "",
     "end": "",
     "company": "",
-    "overview": "",
-    "context": "",
-    "solution": "",
-    "results": "",
-    "takeaways": "",
-    "images": ["", "", ""]
+    "html":""
   },
   {
     "id": 4,
@@ -56,12 +41,7 @@
     "begin": "",
     "end": "",
     "company": "",
-    "overview": "",
-    "context": "",
-    "solution": "",
-    "results": "",
-    "takeaways": "",
-    "images": ["", "", ""]
+    "html":""
   },
   {
     "id": 5,
@@ -72,12 +52,7 @@
     "begin": "",
     "end": "",
     "company": "",
-    "overview": "",
-    "context": "",
-    "solution": "",
-    "results": "",
-    "takeaways": "",
-    "images": ["", "", ""]
+    "html":""
   },
   {
     "id": 6,
@@ -88,11 +63,6 @@
     "begin": "",
     "end": "",
     "company": "",
-    "overview": "",
-    "context": "",
-    "solution": "",
-    "results": "",
-    "takeaways": "",
-    "images": ["", "", ""]
+    "html":""
   }
 ]

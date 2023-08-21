@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,10 +8,6 @@ import CustomCard from "../components/CustomCard";
 const Work = () => {
   var experiences = require("../experiences.json");
   const navigate = useNavigate();
-
-  useEffect(() => {
-    experiences = require("../experiences.json");
-  });
 
   return (
     <Container className="mt-5 d-flex flex-column">
@@ -47,7 +43,12 @@ const Work = () => {
                     console.log(experience);
                     navigate("/detail-work", { state: experience });
                   }}
-                  text={experience.title}
+                  text={
+                    experience.type !== "Personnel" &&
+                    experience.type !== "Scolaire"
+                      ? experience.title - experience.company
+                      : experience.title
+                  }
                   imPath="holder.js/100px210"
                 />
               </Col>
@@ -55,6 +56,7 @@ const Work = () => {
           })}
         </Row>
       </Container>
+      <Row className="m-3"></Row>
     </Container>
   );
 };
