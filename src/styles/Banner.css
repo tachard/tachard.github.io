@@ -1,0 +1,12 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.banner-content {
+  position: absolute;
+  /* Styles pour le contenu de la bannière (texte, boutons, etc.) */
+}

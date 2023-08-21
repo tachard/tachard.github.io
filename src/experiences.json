@@ -3,66 +3,72 @@
     "id": 1,
     "title": "Portfolio",
     "cardImage": "",
+    "bannerImage": "",
     "type": "Personnel",
     "place": "",
     "begin": "2023-08-19",
     "end": "",
     "company": "",
-    "html":""
+    "html": ""
   },
   {
     "id": 2,
     "title": "Stagiaire en informatique",
     "cardImage": "",
+    "bannerImage": "",
     "type": "",
     "place": "",
     "begin": "",
     "end": "",
-    "company": "",
-    "html":""
+    "company": "Siemens Healthineers",
+    "html": ""
   },
   {
     "id": 3,
     "title": "Test 3",
     "cardImage": "",
+    "bannerImage": "",
     "type": "",
     "place": "",
     "begin": "",
     "end": "",
     "company": "",
-    "html":""
+    "html": ""
   },
   {
     "id": 4,
     "title": "Test 4",
     "cardImage": "",
+    "bannerImage": "",
     "type": "",
     "place": "",
     "begin": "",
     "end": "",
     "company": "",
-    "html":""
+    "html": ""
   },
   {
     "id": 5,
     "title": "Test 5",
     "cardImage": "",
+    "bannerImage": "",
     "type": "",
     "place": "",
     "begin": "",
     "end": "",
     "company": "",
-    "html":""
+    "html": ""
   },
   {
     "id": 6,
     "title": "Test 6",
     "cardImage": "",
+    "bannerImage": "",
     "type": "",
     "place": "",
     "begin": "",
     "end": "",
     "company": "",
-    "html":""
+    "html": ""
   }
 ]

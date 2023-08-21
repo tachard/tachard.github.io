@@ -7,7 +7,7 @@ const CustomCard = ({ text, onClick, imPath }) => {
     <div className="card-container">
       <Card className="custom-card" onClick={onClick}>
         <Card.Img variant="top" src={imPath} />
-        <Card.Text className="card-text fs-4">{text}</Card.Text>
+        <Card.Text className="card-text fs-4 text-center">{text}</Card.Text>
       </Card>
     </div>
   );

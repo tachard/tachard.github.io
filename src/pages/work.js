@@ -9,6 +9,17 @@ const Work = () => {
   var experiences = require("../experiences.json");
   const navigate = useNavigate();
 
+  const label = (exp) => {
+    switch (exp.type) {
+      case "Scolaire":
+        return exp.title;
+      case "Personnel":
+        return exp.title;
+      default:
+        return exp.title + " - " + exp.company;
+    }
+  };
+
   return (
     <Container className="mt-5 d-flex flex-column">
       <Row>
@@ -43,13 +54,8 @@ const Work = () => {
                     console.log(experience);
                     navigate("/detail-work", { state: experience });
                   }}
-                  text={
-                    experience.type !== "Personnel" &&
-                    experience.type !== "Scolaire"
-                      ? experience.title - experience.company
-                      : experience.title
-                  }
-                  imPath="holder.js/100px210"
+                  text={label(experience)}
+                  imPath="holder.js/200x200?auto=yes&textmode=exact"
                 />
               </Col>
             );
