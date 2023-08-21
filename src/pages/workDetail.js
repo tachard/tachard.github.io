@@ -21,7 +21,7 @@ const WorkDetail = () => {
                 <p className="fs-3 fw-light text-wrap">
                   Projet scolaire - ENSC
                 </p>
-                <p>
+                <p className="fs-3 fw-light text-wrap">
                   Durée :{" "}
                   {Math.round(
                     (Date.parse(detail.end) - Date.parse(detail.begin)) /
@@ -40,13 +40,13 @@ const WorkDetail = () => {
                 <p className="fs-3 fw-light text-wrap">
                   {detail.type} @ {detail.company}, {detail.place}
                 </p>
-                <p>
-                  {Date.parse(detail.end).toLocaleString("fr-FR", {
+                <p className="fs-3 fw-light text-wrap">
+                  {new Date(detail.end).toLocaleString("fr-FR", {
                     year: "numeric",
                     month: "long",
                   })}{" "}
                   -{" "}
-                  {Date.parse(detail.end).toLocaleString("fr-FR", {
+                  {new Date(detail.end).toLocaleString("fr-FR", {
                     year: "numeric",
                     month: "long",
                   })}
