@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../components/Banner";
@@ -7,6 +7,10 @@ const WorkDetail = () => {
   const navigate = useNavigate();
   const detail = useLocation().state;
   detail === null && navigate("/");
+
+  useEffect(() => {
+    document.title = detail.title;
+  }, [detail]);
 
   const subtitle = (detail) => {
     switch (detail.type) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,6 +8,10 @@ import CustomCard from "../components/CustomCard";
 const Work = () => {
   var experiences = require("../experiences.json");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Thomas Achard";
+  }, []);
 
   const label = (exp) => {
     switch (exp.type) {
@@ -25,7 +29,7 @@ const Work = () => {
       <Row>
         <Col xs={4}></Col>
         <Col>
-          <Row className="mb-2">
+          <Row className="mb-4">
             <h1>Bonjour, je suis Thomas !</h1>
           </Row>
           <Row className="mb-3">
