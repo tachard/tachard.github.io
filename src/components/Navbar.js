@@ -15,6 +15,26 @@ const NavBar = () => {
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
+          <Nav>
+            <Nav.Link href="https://www.linkedin.com/in/thomas-achard-healthtech/">
+              <img
+                alt="LinkedIn"
+                src="https://img.icons8.com/fluency/48/linkedin.png"
+                width="30"
+                height="30"
+                className="d-inline-block align-top mx-1"
+              />
+            </Nav.Link>
+            <Nav.Link href="mailto://thomas.achard@ensc.fr">
+              <img
+                alt="Email"
+                src="https://img.icons8.com/fluency/48/secured-letter.png"
+                width="30"
+                height="30"
+                className="d-inline-block align-top mx-1"
+              />
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
