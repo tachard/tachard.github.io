@@ -52,6 +52,7 @@ const WorkDetail = () => {
         );
     }
   };
+  console.log(detail);
 
   return (
     <>

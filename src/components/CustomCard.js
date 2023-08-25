@@ -4,12 +4,14 @@ import "../styles/CustomCard.css";
 
 const CustomCard = ({ text, onClick, imPath }) => {
   return (
-    <div className="card-container">
-      <Card className="custom-card" onClick={onClick}>
-        <Card.Img variant="top" src={imPath} />
+    <Card className="custom-card" onClick={onClick}>
+      <div className="image-container">
+        <Card.Img src={imPath} className="card-image" />
+      </div>
+      <Card.ImgOverlay>
         <Card.Text className="card-text fs-4 text-center">{text}</Card.Text>
-      </Card>
-    </div>
+      </Card.ImgOverlay>
+    </Card>
   );
 };
 

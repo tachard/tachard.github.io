@@ -43,29 +43,27 @@ const Work = () => {
         </Col>
         <Col xs={2}></Col>
       </Row>
-      <Container className="d-flex justify-content-center align-items-center">
-        <Row
-          xs={1}
-          md={2}
-          className="justify-content-center align-items-center g-4"
-        >
-          {experiences.map((experience) => {
-            return (
-              <Col md={5} key={experience.id}>
-                <CustomCard
-                  onClick={() => {
-                    console.log("Clicked");
-                    console.log(experience);
-                    navigate("/detail-work", { state: experience });
-                  }}
-                  text={label(experience)}
-                  imPath="holder.js/200x200?auto=yes&textmode=exact"
-                />
-              </Col>
-            );
-          })}
-        </Row>
-      </Container>
+      <Row
+        xs={1}
+        md={2}
+        className="justify-content-center align-items-center g-4"
+      >
+        {experiences.map((experience) => {
+          return (
+            <Col md={5} key={experience.id}>
+              <CustomCard
+                onClick={() => {
+                  console.log("Clicked");
+                  console.log(experience);
+                  navigate("/detail-work", { state: experience });
+                }}
+                text={label(experience)}
+                imPath={experience.cardImage}
+              />
+            </Col>
+          );
+        })}
+      </Row>
       <Row className="m-3"></Row>
     </Container>
   );
