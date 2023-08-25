@@ -7,8 +7,8 @@ const DummyWorkDetail = () => {
     <>
       <Banner imagePath="https://via.placeholder.com/200x200?auto=yes&textmode=exact">
         <Row>
-          <Col xs={6}></Col>
-          <Col>
+          <Col xs={4} md={6} lg={6}></Col>
+          <Col xs={8} md={6} lg={4}>
             <Row className="mb-2">
               <h1>Titre de projet</h1>
             </Row>
@@ -29,7 +29,7 @@ const DummyWorkDetail = () => {
               </p>
             </Row>
           </Col>
-          <Col xs={2}></Col>
+          <Col lg={2}></Col>
         </Row>
       </Banner>
       <Container className="mt-5 d-flex flex-column">
@@ -38,7 +38,7 @@ const DummyWorkDetail = () => {
             En résumé
           </h2>
           <Row>
-            <Col xs={6}>
+            <Col lg={6}>
               <p className="fs-5">
                 À travers ce projet de portfolio, conçu avec soin en utilisant
                 la technologie{" "}
@@ -66,7 +66,7 @@ const DummyWorkDetail = () => {
             Contexte
           </h2>
           <Row>
-            <Col xs={6}>
+            <Col lg={6}>
               <p className="fs-5">
                 L'amorce de ce portfolio coïncide avec ma quête d'un stage de
                 fin d'études au sein de mon école d'ingénieurs. Ayant un intérêt
@@ -87,7 +87,7 @@ const DummyWorkDetail = () => {
             Implémentation
           </h2>
           <Row>
-            <Col xs={6}>
+            <Col lg={6}>
               <h3 className="mb-3 fs-4 fw-bold">
                 Architecture de l'information
               </h3>
@@ -141,7 +141,7 @@ const DummyWorkDetail = () => {
             </Col>
           </Row>
           <Row>
-            <Col xs={6}>
+            <Col lg={6}>
               <h3 className="mb-3 fs-4 fw-bold">Programmation</h3>
               <p className="fs-5">
                 Guidé par la simplicité de la vision pour ce site et sa
@@ -184,7 +184,7 @@ const DummyWorkDetail = () => {
             Ce que j'en retiens
           </h2>
           <Row className="mb-3">
-            <Col xs={6}>
+            <Col lg={6}>
               <h3 className="mb-3 fs-4 fw-bold">Consistence ou Innovation ?</h3>
               <p className="fs-5">
                 La question perpétuelle de l'UX se pose : faut-il embrasser
@@ -209,20 +209,24 @@ const DummyWorkDetail = () => {
                 et captivante à mon portfolio.
               </p>
             </Col>
-            <Col className="d-flex justify-content-center align-items-center">
-              <iframe
-                width="500"
-                height="282"
-                src="https://www.youtube.com/embed/TwtQA9hGWs0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+            <Col
+              lg={6}
+              className="d-flex justify-content-center align-items-center"
+            >
+              <div class="video_wrapper">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/TwtQA9hGWs0"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </Col>
           </Row>
           <Row>
-            <Col xs={6}>
+            <Col lg={6}>
               <h3 className="mb-3 fs-4 fw-bold">
                 Si un arbre tombe dans la forêt et que personne n'est là pour
                 l'entendre, est-ce qu'il fait du bruit ?

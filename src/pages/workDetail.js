@@ -58,14 +58,14 @@ const WorkDetail = () => {
     <>
       <Banner imagePath={detail.bannerImage}>
         <Row>
-          <Col xs={6}></Col>
-          <Col>
+          <Col xs={4} md={6} lg={6}></Col>
+          <Col xs={8} md={6} lg={4}>
             <Row className="mb-2">
               <h1>{detail.title}</h1>
             </Row>
             <Row className="mb-3">{subtitle(detail)}</Row>
           </Col>
-          <Col xs={2}></Col>
+          <Col lg={2}></Col>
         </Row>
       </Banner>
       <Container className="mt-5 d-flex flex-column">
