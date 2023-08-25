@@ -1,3 +1,11 @@
+.custom-card {
+  position: relative; /* Assurez-vous que la carte est positionnée */
+}
+
+.custom-card:hover {
+  border-width: 0px;
+}
+
 .card-text {
   position: absolute;
   top: 50%;
@@ -9,28 +17,32 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.custom-card:hover {
-  cursor: pointer;
+.image-container {
+  overflow: hidden;
+  transition: filter 0.3s;
 }
 
-.custom-card:hover .card-text {
+.card-image {
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+/* Styles lorsque la carte est survolée */
+.custom-card.hovered .card-text {
   opacity: 1;
 }
 
-.image-container {
-  overflow: hidden; /* Cache le contenu qui dépasse */
-  transition: filter 0.3s, transform 0.3s; /* Ajoutez une transition fluide */
+.custom-card.hovered .image-container {
+  filter: blur(3px) grayscale(50%);
+  overflow: hidden;
 }
 
-.image-container:hover {
-  filter: blur(5px) grayscale(25%); /* Effets de flou et de teinte grisâtre */
-  transform: scale(1.1); /* Effet de zoom */
+.custom-card.hovered .card-image {
+  transform: scale(1.1);
+  overflow: hidden;
 }
 
-.card-img {
-  transition: transform 0.3s; /* Ajoutez une transition au zoom */
-}
-
-.card-img:hover {
-  transform: scale(1.1); /* Effet de zoom au survol de l'image */
+/* Styles lorsque le texte est visible */
+.card-text.visible {
+  opacity: 1;
 }

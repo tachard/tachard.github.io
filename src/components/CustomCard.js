@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import "../styles/CustomCard.css";
 
 const CustomCard = ({ text, onClick, imPath }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <Card className="custom-card" onClick={onClick}>
-      <div className="image-container">
+    <Card
+      className={`custom-card ${isHovered ? "hovered" : ""}`}
+      onClick={onClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className={`image-container ${isHovered ? "hovered" : ""}`}>
         <Card.Img src={imPath} className="card-image" />
       </div>
       <Card.ImgOverlay>
