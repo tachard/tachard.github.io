@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import "../styles/CustomCard.css";
 
-const CustomCard = ({ text, onClick, imPath }) => {
+const CustomCard = ({ text, imPath }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -16,7 +16,6 @@ const CustomCard = ({ text, onClick, imPath }) => {
   return (
     <Card
       className={`custom-card ${isHovered ? "hovered" : ""}`}
-      onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

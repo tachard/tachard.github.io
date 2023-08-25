@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Portfolio",
     "cardImage": "./img/Thumbnail_Portfolio.png",
-    "bannerImage": "./img/Cover_Portfolio.png",
+    "bannerImage": "../img/Cover_Portfolio.png",
     "type": "Personnel",
     "place": "",
     "begin": "2023-08-19",

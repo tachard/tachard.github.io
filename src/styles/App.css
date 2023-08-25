@@ -16,3 +16,11 @@ iframe {
   width: 100%;
   height: 100%;
 }
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}

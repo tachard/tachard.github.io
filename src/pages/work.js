@@ -2,12 +2,17 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { useNavigate } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import CustomCard from "../components/CustomCard";
+import { getAllProjects } from "../model/ProjectInterface";
+
+export async function loader() {
+  const projects = await getAllProjects();
+  return { projects };
+}
 
 const Work = () => {
-  var experiences = require("../experiences.json");
-  const navigate = useNavigate();
+  const { projects } = useLoaderData();
 
   useEffect(() => {
     document.title = "Thomas Achard";
@@ -48,18 +53,12 @@ const Work = () => {
         md={2}
         className="justify-content-center align-items-center g-4"
       >
-        {experiences.map((experience) => {
+        {projects.map((project) => {
           return (
-            <Col md={5} key={experience.id}>
-              <CustomCard
-                onClick={() => {
-                  console.log("Clicked");
-                  console.log(experience);
-                  navigate("/detail-work", { state: experience });
-                }}
-                text={label(experience)}
-                imPath={experience.cardImage}
-              />
+            <Col md={5} key={project.id}>
+              <Link to={`project/${project.id}`}>
+                <CustomCard text={label(project)} imPath={project.cardImage} />
+              </Link>
             </Col>
           );
         })}

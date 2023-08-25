@@ -1,13 +1,50 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import WorkDetail, { loader as projectLoader } from "./pages/workDetail";
+import DummyWorkDetail from "./pages/DummyWorkDetail";
+import ErrorPage from "./pages/error";
+import Work, { loader as workLoader } from "./pages/work";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+
+    children: [
+      { index: true, element: <Work />, loader: workLoader },
+      {
+        path: "/project/:projectId",
+        element: <WorkDetail />,
+        loader: projectLoader,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/dummy-project",
+        element: <DummyWorkDetail />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

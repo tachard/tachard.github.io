@@ -1,19 +1,26 @@
 import React, { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLoaderData, redirect } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../components/Banner";
+import { getProjectById } from "../model/ProjectInterface";
+
+export async function loader({ params }) {
+  const project = await getProjectById(params.projectId);
+  return { project };
+}
 
 const WorkDetail = () => {
-  const navigate = useNavigate();
-  const detail = useLocation().state;
-  detail === null && navigate("/");
+  const { project } = useLoaderData();
+  if (!project) {
+    throw new Error("Aucun projet affilié à l'identifiant donné.");
+  }
 
   useEffect(() => {
-    document.title = detail.title;
-  }, [detail]);
+    document.title = project.title;
+  }, [project]);
 
-  const subtitle = (detail) => {
-    switch (detail.type) {
+  const subtitle = (project) => {
+    switch (project.type) {
       case "Scolaire":
         return (
           <>
@@ -21,7 +28,7 @@ const WorkDetail = () => {
             <p className="fs-3 fw-light text-wrap">
               Durée :{" "}
               {Math.round(
-                (Date.parse(detail.end) - Date.parse(detail.begin)) /
+                (project.end.getTime() - project.begin.getTime()) /
                   (1000 * 3600 * 30),
                 2
               )}{" "}
@@ -35,15 +42,15 @@ const WorkDetail = () => {
         return (
           <>
             <p className="fs-3 fw-light text-wrap">
-              {detail.type} @ {detail.company}, {detail.place}
+              {project.type} @ {project.company}, {project.place}
             </p>
             <p className="fs-3 fw-light text-wrap">
-              {new Date(detail.end).toLocaleString("fr-FR", {
+              {project.begin.toLocaleString("fr-FR", {
                 year: "numeric",
                 month: "long",
               })}{" "}
               -{" "}
-              {new Date(detail.end).toLocaleString("fr-FR", {
+              {project.end.toLocaleString("fr-FR", {
                 year: "numeric",
                 month: "long",
               })}
@@ -52,24 +59,24 @@ const WorkDetail = () => {
         );
     }
   };
-  console.log(detail);
+  console.log(project);
 
   return (
     <>
-      <Banner imagePath={detail.bannerImage}>
+      <Banner imagePath={project.bannerImage}>
         <Row>
           <Col xs={4} md={6} lg={6}></Col>
           <Col xs={8} md={6} lg={4}>
             <Row className="mb-2">
-              <h1>{detail.title}</h1>
+              <h1>{project.title}</h1>
             </Row>
-            <Row className="mb-3">{subtitle(detail)}</Row>
+            <Row className="mb-3">{subtitle(project)}</Row>
           </Col>
           <Col lg={2}></Col>
         </Row>
       </Banner>
       <Container className="mt-5 d-flex flex-column">
-        <div dangerouslySetInnerHTML={{ __html: detail.html }}></div>
+        <div dangerouslySetInnerHTML={{ __html: project.html }}></div>
         <Row className="m-3"></Row>
       </Container>
     </>
