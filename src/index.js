@@ -5,7 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/about";
-import Contact from "./pages/contact";
 import WorkDetail, { loader as projectLoader } from "./pages/workDetail";
 import DummyWorkDetail from "./pages/DummyWorkDetail";
 import ErrorPage from "./pages/error";
@@ -32,10 +31,6 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
       },
     ],
   },
