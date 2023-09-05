@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../components/Banner";
+import ImgLabel from "../components/ImgLabel";
 
 const DummyWorkDetail = () => {
   return (
@@ -84,10 +85,10 @@ const DummyWorkDetail = () => {
               </p>
             </Col>
             <Col className="d-flex align-items-center justify-content-center">
-              <img
+              <ImgLabel
                 src="https://developers.google.com/static/mediapipe/images/solutions/examples/hand_landmark.png"
                 alt="Main tenant un oeuf. Des points et lignes montrent le squelette prédit de la main."
-                className="rounded w-75 d-block"
+                label="Squelette de la main prise en photo, prédit par Mediapipe"
               />
             </Col>
           </Row>
@@ -121,10 +122,10 @@ const DummyWorkDetail = () => {
               </p>
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
-              <img
+              <ImgLabel
                 src="./img/Heatmap.png"
                 alt="Vue vidéo d'une table avec une carte de chaleur superposée. Coloration au niveau des doigts touchant la table."
-                className="rounded w-75 d-block"
+                label="Heatmap superposée à la table et se colorant au toucher"
               />
             </Col>
           </Row>
@@ -189,10 +190,10 @@ const DummyWorkDetail = () => {
               </p>
             </Col>
             <Col className="d-flex justify-content-center aign-items-center">
-              <img
+              <ImgLabel
                 src="https://upload.wikimedia.org/wikipedia/commons/f/f0/QSOS-processus-en.png"
                 alt="Diagramme du QSOS"
-                className="img-fluid d-block"
+                label="Diagramme du modèle QSOS"
               />
             </Col>
           </Row>
@@ -289,10 +290,10 @@ const DummyWorkDetail = () => {
               </p>
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
-              <img
+              <ImgLabel
                 src="./img/IMG-20230802-WA0001.jpg"
-                alt="Equipe Projet."
-                className="d-block rounded w-75"
+                alt="Equipe Projet"
+                label="Equipe travaillant sur le projet"
               />
             </Col>
           </Row>
