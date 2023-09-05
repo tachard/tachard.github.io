@@ -40,141 +40,175 @@ const DummyWorkDetail = () => {
           <Row>
             <Col lg={6}>
               <p className="fs-5">
-                À travers ce projet de portfolio, conçu avec soin en utilisant
-                la technologie{" "}
-                <a className="text-reset" href="https://react.dev/">
-                  React
-                </a>
-                , j'ai façonné une plateforme, hébergée sur{" "}
-                <a className="text-reset" href="https://pages.github.com/">
-                  GitHub Pages
-                </a>
-                , qui va au-delà de la simple présentation. C'est une vitrine
-                dynamique de mon savoir-faire en ingénierie logicielle et en UX
-                Design. Explorez les détails de projets significatifs auxquels
-                j'ai contribué, tout en découvrant mon engagement envers une
-                expérience utilisateur réfléchie et esthétiquement
-                enrichissante. Bien que créé dans un délai resserré, ce
-                portfolio exprime mes compétences et aspirations, marquant le
-                début d'un voyage passionnant.
+                Mon stage chez Siemens Healthineers a été une plongée directe
+                dans le monde de l'ingénierie cognitique. J'ai travaillé sur
+                deux projets clés : la détection du toucher de table et la
+                création d'un guide d'évaluation de logiciels open-source. Ces
+                expériences ont renforcé ma maîtrise technique tout en me
+                permettant de développer une communication efficace et de
+                prendre des responsabilités de leadership. Je vous emmène à
+                travers ces projets, pour vous montrer comment j'ai résolu des
+                défis techniques et comment ces expériences ont enrichi mon
+                profil.
               </p>
             </Col>
           </Row>
         </Row>
         <Row className="my-3">
           <h2 className="mb-3 fs-3 fw-bold" style={{ color: "#4f9d69" }}>
-            Contexte
-          </h2>
-          <Row>
-            <Col lg={6}>
-              <p className="fs-5">
-                L'amorce de ce portfolio coïncide avec ma quête d'un stage de
-                fin d'études au sein de mon école d'ingénieurs. Ayant un intérêt
-                prononcé pour les domaines de l'UX, je me suis rapidement rendu
-                compte de la valeur d'une présentation professionnelle et
-                engageante de mes compétences. C'est dans cette optique que ce
-                portfolio a vu le jour. Mais il ne s'agit pas seulement d'une
-                réponse à des exigences conventionnelles. Face aux contraintes
-                d'un Curriculum Vitae français, limité à une page recto, ce
-                portfolio se révèle comme mon espace pour dévoiler mes
-                réalisations clés.
-              </p>
-            </Col>
-          </Row>
-        </Row>
-        <Row className="my-3">
-          <h2 className="mb-3 fs-3 fw-bold" style={{ color: "#4f9d69" }}>
-            Implémentation
+            Réalisations
           </h2>
           <Row>
             <Col lg={6}>
               <h3 className="mb-3 fs-4 fw-bold">
-                Architecture de l'information
+                Détection du toucher de table
               </h3>
-              <p className="fs-5">
-                La structure de ce site s'articule autour d'une architecture
-                simple, puisant inspiration auprès de divers portfolios (issu de
-                ce{" "}
-                <a
-                  className="text-reset"
-                  href="https://blog.uxfol.io/ux-portfolio-examples/"
-                >
-                  top
-                </a>
-                ). En harmonie avec les conclusions tirées de ces références,
-                j'ai façonné l'architecture suivante :
-              </p>
-              <ul className="fs-5">
-                <li>
-                  Une page d'accueil épurée, accueillant mon nom et une phrase
-                  d'introduction engageante, accompagnés de cartes offrant un
-                  accès direct à mes projets phares.
-                </li>
-                <li>
-                  Une page dédiée à une présentation approfondie de ma personne,
-                  visant à insuffler une dimension humaine à mon profil :
-                  <ul>
-                    <li>
-                      Mon parcours académique, tissant les fils de ma formation.
-                    </li>
-                    <li>
-                      Les éléments qui suscitent mon enthousiasme dans mes
-                      expériences professionnelles.
-                    </li>
-                    <li>
-                      Un aperçu de mes loisirs et activités hors travail,
-                      offrant une perspective plus holistique de ma
-                      personnalité.
-                    </li>
-                    <li>
-                      Mes aspirations et buts professionnels, reflétant ma
-                      vision à long terme.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Enfin, une page de contact, simplifiée et accessible,
-                  regroupant les liens vers mon adresse e-mail, mon profil
-                  LinkedIn et mes versions actualisées de CV.
-                </li>
-              </ul>
             </Col>
           </Row>
           <Row>
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">Programmation</h3>
               <p className="fs-5">
-                Guidé par la simplicité de la vision pour ce site et sa
-                dissociation d'intégrations complexes d'API, j'ai pris la
-                direction d'une architecture orientée client. Cette approche
-                réduit le temps de développement au strict nécessaire pour
-                façonner l'expérience utilisateur. Pour concrétiser cette
-                vision, j'ai fait le choix judicieux d'adopter le framework
-                moderne React, s'appuyant sur JavaScript. Cette technologie,
-                dont j'avais déjà exploré la version Native, m'a captivé par son
-                potentiel pour la programmation web avancée.{" "}
+                Lors de mon stage chez Siemens Healthineers, j'ai eu
+                l'opportunité exceptionnelle de travailler au sein de
+                l'Innovation Think Tank sur un projet novateur de détection du
+                toucher de table. Cette entreprise m'a confié la mission de
+                reprendre le travail d'une précédente stagiaire, qui avait déjà
+                mis en place un prototype fonctionnel. Cependant, ce prototype
+                présentait des limitations, notamment en termes de précision
+                dans l'interface et de nombre de mains détectables
+                simultanément. C'était à moi de repenser et d'améliorer ce
+                prototype pour le rendre plus performant et plus précis. J'ai
+                repris la stack du projet : Python, Flask pour le développement
+                du serveur web, OpenCV pour le traitement d'images et Mediapipe,
+                un framework d'IAs de computer vision.
+              </p>
+            </Col>
+            <Col className="d-flex align-items-center justify-content-center">
+              <img
+                src="https://developers.google.com/static/mediapipe/images/solutions/examples/hand_landmark.png"
+                alt="Main tenant un oeuf. Des points et lignes montrent le squelette prédit de la main."
+                className="rounded w-75 d-block"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <p className="fs-5">
+                Les deux défis majeurs étaient de rendre la détection de la
+                table automatique, éliminant ainsi la nécessité d'une
+                intervention manuelle, et d'améliorer la visualisation en
+                remplaçant la grille par une heatmap, offrant une précision au
+                doigt près pour la détection du toucher. Cette transition s'est
+                faite de manière itérative, en remplaçant progressivement les
+                composants existants par les nouvelles briques de code que j'ai
+                développées.
               </p>
               <p className="fs-5">
-                Pour optimiser le rythme de création, j'ai également embrassé{" "}
-                <a
-                  className="text-reset"
-                  href="https://react-bootstrap.netlify.app/"
-                >
-                  React-Bootstrap
-                </a>
-                , une bibliothèque riche en composants prêts à l'emploi. Grâce à
-                ces éléments à la fois accessibles et adaptatifs, j'ai pu
-                maintenir un équilibre harmonieux entre fonctionnalité et
-                design. La navigation, quant à elle, trouve sa solution au sein
-                du package{" "}
-                <a
-                  className="text-reset"
-                  href="https://reactrouter.com/en/main"
-                >
-                  React Router
-                </a>
-                , me permettant de présenter les informations pertinentes en
-                réponse aux interactions avec les liens.
+                Ce projet a été un véritable tremplin pour mon développement
+                technique. Il m'a permis de maîtriser de nouvelles technologies,
+                d'affiner mes compétences en programmation et en traitement
+                d'images, et surtout, de comprendre comment appliquer ces
+                compétences en contexte professionnel. En outre, ce projet a été
+                présenté à un représentant de la R&D de Siemens Healthineers, ce
+                qui a renforcé mes compétences en communication et en
+                présentation. Ces compétences de communication ont été
+                essentielles pour expliquer les résultats de mon travail,
+                convaincre des avantages de la solution proposée, et contribuer
+                au succès global du projet. À mon départ, le prototype était
+                suffisamment abouti pour faire l'objet d'une démonstration
+                professionnelle, illustrant parfaitement l'impact de notre
+                travail.
+              </p>
+            </Col>
+            <Col className="d-flex justify-content-center align-items-center">
+              <img
+                src="./img/Heatmap.png"
+                alt="Vue vidéo d'une table avec une carte de chaleur superposée. Coloration au niveau des doigts touchant la table."
+                className="rounded w-75 d-block"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <h3 className="mb-3 fs-4 fw-bold">
+                Guide d'évaluation de logiciels open-source
+              </h3>
+              <p className="fs-5">
+                Au cours de mon stage chez Siemens Healthineers, j'ai eu
+                l'opportunité de contribuer de manière significative à
+                l'évaluation des logiciels open source au sein de l'équipe de
+                recherche. Pour cette tâche cruciale, j'ai adopté une approche
+                méthodique en utilisant la méthode QSOS, abréviation de
+                "Qualification and Selection of Open-source Software". Cette
+                méthodologie m'a fourni un cadre structuré pour évaluer et
+                sélectionner de manière efficace des logiciels open source en
+                fonction de critères préalablement définis, garantissant ainsi
+                une évaluation informée et rigoureuse.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <p className="fs-5">
+                La méthode repose sur 4 étapes :
+                <ol className="fs-5">
+                  <li>
+                    <span className="fw-bold">
+                      Définition des logiciels et des critères :
+                    </span>{" "}
+                    La première étape consiste à définir les logiciels à
+                    comparer et à identifier les critères spécifiques
+                    d'évaluation. Plutôt que d'imposer des critères, j'ai fait
+                    le choix de laisser aux utilisateurs la flexibilité de
+                    sélectionner parmi un ensemble de critères préétablis,
+                    puisés dans la norme ISO pour la qualité logicielle.
+                  </li>
+                  <li>
+                    <span className="fw-bold">Évaluation des logiciels :</span>{" "}
+                    Ensuite, l'utilisateur doit évaluer les logiciels en
+                    fonction de ces critères, notant chaque logiciel en
+                    conséquence.
+                  </li>
+                  <li>
+                    <span className="fw-bold">
+                      Hiérarchisation des critères :
+                    </span>{" "}
+                    Pour simplifier le processus de hiérarchisation,
+                    l'utilisateur doit se poser une question clé : "Une mauvaise
+                    note à ce critère disqualifie-t-elle le logiciel ?". Si oui,
+                    le critère est réellement important.
+                  </li>
+                  <li>
+                    <span className="fw-bold">Comparaison des logiciels :</span>{" "}
+                    Enfin, en combinant les résultats avec la hiérarchisation
+                    des critères, l'utilisateur peut procéder à une comparaison
+                    approfondie des logiciels et sélectionner la meilleure
+                    solution.
+                  </li>
+                </ol>
+              </p>
+            </Col>
+            <Col className="d-flex justify-content-center aign-items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/QSOS-processus-en.png"
+                alt="Diagramme du QSOS"
+                className="img-fluid d-block"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <p className="fs-5">
+                La réussite de ce guide reposait sur une communication efficace
+                et une persuasion convaincante. Bien que le projet ait bénéficié
+                du soutien initial de la direction supérieure et du département
+                R&D, j'ai mis l'accent sur la convivialité et la modularité de
+                la méthode QSOS pour consolider leur engagement. L'intégration
+                des critères de la norme ISO a également renforcé la crédibilité
+                du processus en soulignant sa rigueur et sa robustesse.
+                L'ensemble de ces efforts a clairement démontré la valeur du
+                guide et son potentiel pour optimiser la sélection de logiciels
+                au sein de l'équipe.
               </p>
             </Col>
           </Row>
@@ -185,61 +219,119 @@ const DummyWorkDetail = () => {
           </h2>
           <Row className="mb-3">
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">Consistence ou Innovation ?</h3>
+              <h3 className="mb-3 fs-4 fw-bold">Compétences techniques</h3>
               <p className="fs-5">
-                La question perpétuelle de l'UX se pose : faut-il embrasser
-                l'innovation ou adhérer aux conventions pour une accessibilité
-                immédiate ? Mon choix a été de prioriser la conformité aux
-                normes pour l'itération inaugurale. Cette décision repose sur
-                une approche pragmatique, visant à produire rapidement un
-                résultat solide. Bien que je n'aie pas eu l'occasion de le
-                tester directement avec des utilisateurs à ce stade, j'ai opté
-                pour une conception familière, qui minimise les barrières
-                d'entrée pour les visiteurs.
+                Pour commencer, j'ai considérablement élargi mes compétences en
+                programmation. J'ai développé une solide maîtrise de Python, un
+                langage polyvalent et puissant, en travaillant sur la détection
+                du toucher. Cette expérience m'a permis de transférer mes
+                connaissances en développement d'applications web acquises
+                précédemment en utilisant d'autres langages vers Python, en
+                utilisant le framework Flask. De plus, j'ai approfondi mes
+                connaissances en traitement d'images, une compétence que j'avais
+                déjà explorée lors de ma formation sous MATLAB. Cependant, cette
+                fois-ci, j'ai eu l'occasion d'appliquer ces compétences dans un
+                contexte professionnel en utilisant OpenCV avec Python. Cette
+                expérience m'a permis de développer une compréhension
+                approfondie des concepts de vision par ordinateur et d'acquérir
+                des compétences pratiques pour résoudre des problèmes complexes
+                liés à la détection et au traitement d'images en temps réel.
               </p>
               <p className="fs-5">
-                Cependant, ma conviction en l'innovation reste inébranlable. Mon
-                expérience m'a enseigné que l'UX Design transcende les normes,
-                qu'il offre des opportunités pour la créativité et l'audace.
-                Tout en acceptant les contraintes actuelles, j'envisage l'avenir
-                avec la perspective d'explorer des approches plus novatrices.
-                L'équilibre entre la consistance et l'innovation continuera de
-                guider mes choix, tout en laissant la porte ouverte à des
-                itérations futures qui pourraient apporter une touche innovante
-                et captivante à mon portfolio.
+                Le volet "DevOps" a également fait partie intégrante de mon
+                expérience. J'ai travaillé avec des outils tels que Git pour
+                gérer le code source et faciliter la collaboration au sein de
+                l'équipe. J'ai appris à créer des exécutables pour le projet,
+                bien que la mise en place de tests ait été une composante que je
+                n'ai pas encore explorée pleinement. J'ai vraiment apprécié
+                cette expérience transverse où je devais mettre en valeur le
+                travail des autres et le mien.
+              </p>
+              <p className="fs-5">
+                D'autre part, la création du guide d'évaluation des logiciels
+                open source m'a permis de perfectionner mes compétences dans des
+                domaines complémentaires. J'ai utilisé des logiciels de
+                présentation tels que PowerPoint pour concevoir un document
+                clair et informatif. Ma recherche en ligne, notamment la
+                consultation d'articles anglophones, m'a aidé à rassembler des
+                informations pertinentes.
               </p>
             </Col>
-            <Col
-              lg={6}
-              className="d-flex justify-content-center align-items-center"
-            >
-              <div class="video_wrapper">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/TwtQA9hGWs0"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <h3 className="mb-3 fs-4 fw-bold">Communication</h3>
+              <p className="fs-5">
+                Mon stage chez Siemens Healthineers m'a immergé dans un
+                environnement de travail agile, en suivant une approche Scrum
+                avec des sprints d'une semaine. Cette expérience m'a appris à
+                présenter rapidement et de manière concise mes avancées à
+                l'équipe. Ces présentations hebdomadaires étaient cruciales pour
+                maintenir tous les membres de l'équipe informés de l'état du
+                projet, nécessitant une communication claire et succincte. Cette
+                expérience m'a aidé à structurer efficacement mes communications
+                pour transmettre les informations essentielles de manière rapide
+                et accessible.
+              </p>
+              <p className="fs-5">
+                En plus des sprints, j'ai participé à des réunions mensuelles
+                avec l'équipe de R&D de l'entreprise. Ces réunions
+                représentaient des moments clés où il était essentiel non
+                seulement de présenter les avancées du projet, mais aussi de les
+                vendre et de convaincre les parties prenantes de la pertinence
+                de notre travail. Cela impliquait de soigner la présentation, de
+                mettre en avant les points forts du projet, tout en gardant des
+                détails en réserve pour répondre aux questions et développer des
+                aspects spécifiques si nécessaire. J'ai pleinement saisi
+                l'importance de l'art de la communication convaincante dans ce
+                contexte, et j'ai réussi à l'appliquer avec succès pour
+                atteindre nos objectifs.
+              </p>
+            </Col>
+            <Col className="d-flex justify-content-center align-items-center">
+              <img
+                src="./img/IMG-20230802-WA0001.jpg"
+                alt="Equipe Projet."
+                className="d-block rounded w-75"
+              />
             </Col>
           </Row>
           <Row>
             <Col lg={6}>
               <h3 className="mb-3 fs-4 fw-bold">
-                Si un arbre tombe dans la forêt et que personne n'est là pour
-                l'entendre, est-ce qu'il fait du bruit ?
+                Leadership et gestion de projet
               </h3>
               <p className="fs-5">
-                Ce projet continue de m'apprendre (après l'avoir découvert lors
-                d'un précédent stage) que le monde professionnel ne se limite
-                pas à des réalisations, mais englobe aussi la manière dont je
-                communique ma valeur à travers celles-ci. Avec ce portfolio, je
-                continue de réaliser l'importance de présenter mes compétences,
-                mon parcours et ma passion de manière engageante. Cela m'a
-                incité à réfléchir profondément à ma propre identité
-                professionnelle et à la traduire en un récit cohérent.
+                Mon expérience chez Siemens Healthineers a été l'occasion de
+                développer des compétences en leadership et en gestion de
+                projets, même si ces rôles étaient parfois informels. En tant
+                que l'un des deux membres de l'équipe projet possédant des
+                compétences en programmation web et une connaissance approfondie
+                du projet, j'ai joué un rôle central dans divers aspects de ce
+                projet novateur.
+              </p>
+              <p className="fs-5">
+                Tout d'abord, j'ai souvent été chargé de l'implémentation
+                visuelle des fonctionnalités. Dans ce rôle, j'ai agi comme un
+                UI/UX Designer en contribuant à la conception de l'interface
+                utilisateur et en réfléchissant à la manière optimale de
+                présenter les fonctionnalités. Cette implication m'a rapproché
+                de ma formation où j'ai acquis une compréhension profonde de
+                l'importance de l'ergonomie et de l'expérience utilisateur dans
+                le développement d'applications web.
+              </p>
+              <p className="fs-5">
+                De plus, grâce à mes compétences en versionnage et en
+                informatique, j'ai pu apporter des contributions significatives
+                à l'équipe en participant activement aux discussions sur les
+                meilleures approches techniques pour résoudre les défis du
+                projet. Mon expérience m'a également permis de prendre des
+                décisions éclairées, notamment lorsqu'il a fallu fixer une
+                deadline cruciale pour la création de la version 1 du projet.
+                Cette responsabilité a été l'une des occasions où j'ai pu
+                exercer un rôle de gestionnaire de projet, contribuant ainsi à
+                la planification et à l'organisation efficace du travail de
+                l'équipe.
               </p>
             </Col>
           </Row>
