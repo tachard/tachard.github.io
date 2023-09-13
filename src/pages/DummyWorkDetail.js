@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../components/Banner";
-import ImgLabel from "../components/ImgLabel";
 
 const DummyWorkDetail = () => {
   return (
@@ -73,16 +72,10 @@ const DummyWorkDetail = () => {
                 avait du contenu dans la boite : Vu que l'objet est un ajout à
                 une boite, il faut qu'il puisse marcher seul, donc pas
                 d'accéléromètre sur les ouvertures mais plutôt un capteur de
-                poids. Ainsi on sait le poids du courrier dedans.
+                poids. Ainsi on peut mesurer le poids du courrier dedans.
               </p>
             </Col>
-            <Col className="d-flex align-items-center justify-content-center">
-              <ImgLabel
-                src="https://developers.google.com/static/mediapipe/images/solutions/examples/hand_landmark.png"
-                alt="Main tenant un oeuf. Des points et lignes montrent le squelette prédit de la main."
-                label="Squelette de la main prise en photo, prédit par Mediapipe"
-              />
-            </Col>
+            <Col className="d-flex align-items-center justify-content-center"></Col>
           </Row>
           <Row>
             <Col lg={6}>
@@ -115,13 +108,7 @@ const DummyWorkDetail = () => {
                 pas changer constamment les piles.
               </p>
             </Col>
-            <Col className="d-flex justify-content-center align-items-center">
-              <ImgLabel
-                src="./img/Heatmap.png"
-                alt="Vue vidéo d'une table avec une carte de chaleur superposée. Coloration au niveau des doigts touchant la table."
-                label="Heatmap superposée à la table et se colorant au toucher"
-              />
-            </Col>
+            <Col className="d-flex justify-content-center align-items-center"></Col>
           </Row>
           <Row>
             <Col lg={6}>
@@ -131,26 +118,25 @@ const DummyWorkDetail = () => {
                 microcontrôleur ESP32 et le second est une application mobile
                 Android. Sur l'ESP il s'agit de prendre la mesure, créer un
                 serveur Bluetooth et gérer la mise en sommeil profond et sa
-                sortie.
+                sortie. La communauté ESP/Arduino étant très active, il était
+                facile de trouver des librairies pour réaliser ces fonctions.
               </p>
             </Col>
           </Row>
           <Row>
             <Col lg={6}>
-              <p className="fs-5">...</p>
+              <p className="fs-5">
+                Quant à l'application mobile, je disposais déjà de connaissances
+                en React Native et j'ai voulu explorer de nouvelles technologies
+                comme Flutter, basé sur le langage Dart. Framework de
+                développement cross-plateforme créé par Google, j'avais aussi
+                l'avantage de l'emploi natif du Material Design de Google afin
+                de styliser simplement mon application. L'objectif de cette
+                application est simple : se connecter à l'appareil en Bluetooth,
+                récupérer le poids et l'afficher.
+              </p>
             </Col>
-            <Col className="d-flex justify-content-center aign-items-center">
-              <ImgLabel
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/QSOS-processus-en.png"
-                alt="Diagramme du QSOS"
-                label="Diagramme du modèle QSOS"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={6}>
-              <p className="fs-5">...</p>
-            </Col>
+            <Col className="d-flex justify-content-center aign-items-center"></Col>
           </Row>
         </Row>
         <Row className="my-3">
@@ -159,32 +145,63 @@ const DummyWorkDetail = () => {
           </h2>
           <Row className="mb-3">
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">...</h3>
-              <p className="fs-5">...</p>
-              <p className="fs-5">...</p>
-              <p className="fs-5">...</p>
+              <h3 className="mb-3 fs-4 fw-bold">
+                Vers l'interopérabilité avec le Bluetooth
+              </h3>
+              <p className="fs-5">
+                Ce projet a été pour moi l'occasion d'en apprendre plus sur des
+                thématiques avancées en informatique et en particulier
+                l'interopérabilité. Actuellement on connecte souvent des
+                appareils entre eux comme un téléphone avec des écouteurs, une
+                voiture ...
+              </p>
+              <p className="fs-5">
+                Le Bluetooth a plusieurs modes de fonctionnement mais celui dont
+                j'avais besoin était simple et rappelle l'architecture
+                client-serveur qu'on retrouve sur le web. Du côté serveur, on le
+                nomme et on crée des services et caractéristiques qui envoient
+                de l'information vers le périphérique connecté. On gère aussi la
+                connexion et déconnexion aux appareils. Côté client, on se
+                connecte au périphérique et à ses services et caractéristiques.
+                Enfin, on récupère les valeurs de manière asynchrone.
+              </p>
             </Col>
           </Row>
           <Row>
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">...</h3>
-              <p className="fs-5">...</p>
-              <p className="fs-5">...</p>
+              <h3 className="mb-3 fs-4 fw-bold">Gérer un projet de A à Z</h3>
+              <p className="fs-5">
+                Le projet a commencé par une phase de planification avec le
+                cahier des charges où j'ai dimensionné le projet afin de ne pas
+                finir en retard : activités de code, prise en compte de la
+                commande de pièces électroniques, présentations ... Lors du
+                projet j'avais des points avec mes tuteurs afin de veuiller au
+                bon déroulement du projet. Celui-ci s'est achevé par une
+                soutenance orale afin de prendre du recul sur ce que j'ai fait.
+              </p>
             </Col>
-            <Col className="d-flex justify-content-center align-items-center">
-              <ImgLabel
-                src="./img/IMG-20230802-WA0001.jpg"
-                alt="Equipe Projet"
-                label="Equipe travaillant sur le projet"
-              />
-            </Col>
+            <Col className="d-flex justify-content-center align-items-center"></Col>
           </Row>
           <Row>
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">...</h3>
-              <p className="fs-5">...</p>
-              <p className="fs-5">...</p>
-              <p className="fs-5">...</p>
+              <h3 className="mb-3 fs-4 fw-bold">
+                Faut-il forcément verser vers le technologique ?
+              </h3>
+              <p className="fs-5">
+                La première contrainte du projet était de faire de
+                l'informatique. Toutefois j'ai conclu mon projet en présentant
+                une interface courante en Amérique-Nord, entièrement mécanique
+                et qui permet de savoir si une boîte aux lettres n'est pas vide.
+                Et oui en Amérique, on avait déjà la réponse. Il fallait juste
+                avoir une habitude pour le facteur de bouger un manche et pour
+                l'utilisateur de le baisser.
+              </p>
+              <p className="fs-5">
+                Ainsi, le projet aurait pu prendre des tournures différentes :
+                susciter le même comportement par des nudges, automatiser
+                mécaniquement le principe : déclencher des ressorts à
+                l'ouverture ...
+              </p>
             </Col>
           </Row>
         </Row>
