@@ -3,6 +3,7 @@ import "holderjs";
 import NavBar from "./components/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Container } from "react-bootstrap";
 
 function App() {
   const handleScrollToTop = () => {
@@ -21,8 +22,10 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <NavBar />
-      <Outlet />
+      <Container fluid>
+        <NavBar />
+        <Outlet />
+      </Container>
     </>
   );
 }
