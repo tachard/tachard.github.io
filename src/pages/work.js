@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link, useLoaderData } from "react-router-dom";
-import CustomCard from "../components/CustomCard";
 import { getAllProjects } from "../model/ProjectInterface";
+import ProjectListElement from "../components/ProjectListElement";
 
 export async function loader() {
   const projects = await getAllProjects();
@@ -17,17 +17,6 @@ const Work = () => {
   useEffect(() => {
     document.title = "Thomas Achard";
   }, []);
-
-  const label = (exp) => {
-    switch (exp.type) {
-      case "Scolaire":
-        return exp.title;
-      case "Personnel":
-        return exp.title;
-      default:
-        return exp.title + " - " + exp.company;
-    }
-  };
 
   return (
     <Container className="mt-5 d-flex flex-column">
@@ -51,13 +40,20 @@ const Work = () => {
       <Row
         xs={1}
         md={2}
-        className="justify-content-center align-items-center g-4"
+        className="d-flex justify-content-center align-items-center g-4"
       >
         {projects.map((project) => {
           return (
-            <Col md={5} key={project.id}>
-              <Link to={`project/${project.id}`}>
-                <CustomCard text={label(project)} imPath={project.cardImage} />
+            <Col
+              md={5}
+              key={project.id}
+              className="d-flex justify-content-center"
+            >
+              <Link
+                to={`project/${project.id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <ProjectListElement project={project} />
               </Link>
             </Col>
           );

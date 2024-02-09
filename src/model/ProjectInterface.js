@@ -13,6 +13,8 @@ export const getAllProjects = async () => {
       project.place,
       project.begin,
       project.end,
+      project.summary,
+      project.keySkills,
       project.company,
       project.html
     );
@@ -20,7 +22,7 @@ export const getAllProjects = async () => {
 };
 
 export const getProjectById = async (id) => {
-  const project = projects.find((project) => project.id == id);
+  const project = projects.find((project) => project.id === id);
 
   if (project) {
     return new Project(
@@ -32,6 +34,8 @@ export const getProjectById = async (id) => {
       project.place,
       project.begin,
       project.end,
+      project.summary,
+      project.keySkills,
       project.company,
       project.html
     );

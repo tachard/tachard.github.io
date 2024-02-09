@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLoaderData, redirect } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../components/Banner";
 import { getProjectById } from "../model/ProjectInterface";

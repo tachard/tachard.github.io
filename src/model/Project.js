@@ -8,6 +8,8 @@ class Project {
     place,
     begin,
     end,
+    summary,
+    keySkills,
     company,
     html
   ) {
@@ -19,6 +21,8 @@ class Project {
     this.place = place;
     this.begin = new Date(begin);
     this.end = new Date(end);
+    this.summary = summary;
+    this.keySkills = keySkills;
     this.company = company;
     this.html = html;
   }
