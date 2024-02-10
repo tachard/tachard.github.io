@@ -36,7 +36,7 @@ const ProjectListElement = ({ project }) => {
       <Card.Body>
         <Card.Title>{label()}</Card.Title>
         <Card.Text>{project.summary}</Card.Text>
-        <Stack direction="horizontal" gap={2}>
+        <Stack direction="horizontal" gap={2} style={{ flexWrap: "wrap" }}>
           {project.keySkills.map((skill, i) => (
             <Badge>{skill}</Badge>
           ))}

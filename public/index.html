@@ -45,5 +45,58 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".card");
+        const cardTitles = document.querySelectorAll(".card-title");
+        const cardTexts = document.querySelectorAll(".card-text");
+        const cardStacks = document.querySelectorAll(".hstack");
+
+        let maxCardHeight = 0;
+        let maxCardTitleHeight = 0;
+        let maxCardTextHeight = 0;
+        let maxCardStackHeight = 0;
+
+        // Cards
+        cards.forEach((card) => {
+          const cardHeight = card.offsetHeight;
+          maxCardHeight = Math.max(maxCardHeight, cardHeight);
+        });
+
+        cards.forEach((card) => {
+          card.style.height = `${maxCardHeight}px`;
+        });
+
+        // Card titles
+        cardTitles.forEach((cardTitle) => {
+          const cardTitleHeight = cardTitle.offsetHeight;
+          maxCardTitleHeight = Math.max(maxCardTitleHeight, cardTitleHeight);
+        });
+
+        cardTitles.forEach((cardTitle) => {
+          cardTitle.style.height = `${maxCardTitleHeight}px`;
+        });
+
+        // Card texts
+        cardTexts.forEach((cardText) => {
+          const cardTextHeight = cardText.offsetHeight;
+          maxCardTextHeight = Math.max(maxCardTextHeight, cardTextHeight);
+        });
+
+        cardTexts.forEach((cardText) => {
+          cardText.style.height = `${maxCardTextHeight}px`;
+        });
+
+        // Card badges
+        cardStacks.forEach((cardStack) => {
+          const cardStackHeight = cardStack.offsetHeight;
+          maxCardStackHeight = Math.max(maxCardStackHeight, cardStackHeight);
+        });
+
+        cardStacks.forEach((cardStack) => {
+          cardStack.style.height = `${maxCardStackHeight}px`;
+        });
+      });
+    </script>
   </body>
 </html>
