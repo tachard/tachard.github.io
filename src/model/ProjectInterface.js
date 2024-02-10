@@ -22,7 +22,7 @@ export const getAllProjects = async () => {
 };
 
 export const getProjectById = async (id) => {
-  const project = projects.find((project) => project.id === id);
+  const project = projects.find((project) => project.id == id);
 
   if (project) {
     return new Project(

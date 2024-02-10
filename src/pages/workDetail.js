@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import { getProjectById } from "../model/ProjectInterface";
 
 export async function loader({ params }) {
+  console.log(params.projectId);
   const project = await getProjectById(params.projectId);
   return { project };
 }
