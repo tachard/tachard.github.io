@@ -26,14 +26,20 @@ const ProjectListElement = ({ project }) => {
     }
   };
   return (
-    <Card>
+    <Card style={{ alignSelf: "stretch" }}>
       <Card.Header>{header()}</Card.Header>
       <Card.Img
         variant="top"
         src={project.cardImage}
         style={{ borderBottom: "thin solid var(--bs-card-border-color)" }}
       />
-      <Card.Body>
+      <Card.Body
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
         <Card.Title>{label()}</Card.Title>
         <Card.Text>{project.summary}</Card.Text>
         <Stack direction="horizontal" gap={2} style={{ flexWrap: "wrap" }}>

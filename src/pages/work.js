@@ -40,18 +40,18 @@ const Work = () => {
       <Row
         xs={1}
         md={2}
-        className="d-flex justify-content-center align-items-center g-4"
+        className="d-flex justify-content-center align-items-stretch g-4"
       >
         {projects.map((project) => {
           return (
             <Col
               md={5}
               key={project.id}
-              className="d-flex justify-content-center"
+              className="d-flex justify-content-center align-items-stretch"
             >
               <Link
                 to={`project/${project.id}`}
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", display: "flex" }}
               >
                 <ProjectListElement project={project} />
               </Link>
