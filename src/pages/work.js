@@ -45,7 +45,7 @@ const Work = () => {
         {projects.map((project) => {
           return (
             <Col
-              md={5}
+              md={4}
               key={project.id}
               className="d-flex justify-content-center align-items-stretch"
             >
