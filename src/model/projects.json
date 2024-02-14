@@ -36,8 +36,8 @@
   {
     "id": 3,
     "title": "InnoBois",
-    "cardImage": "",
-    "bannerImage": "",
+    "cardImage": "./img/Innobois_Logo.jpg",
+    "bannerImage": "../img/Innobois_Banner.png",
     "type": "Scolaire",
     "place": "",
     "begin": "2023-09-15",

@@ -30,7 +30,7 @@ const WorkDetail = () => {
               Durée :{" "}
               {Math.round(
                 (project.end.getTime() - project.begin.getTime()) /
-                  (1000 * 3600 * 30),
+                  (1000 * 3600 * 24 * 30),
                 2
               )}{" "}
               mois
