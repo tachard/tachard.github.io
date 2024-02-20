@@ -35,172 +35,232 @@ const DummyWorkDetail = () => {
       <Container className="mt-5 d-flex flex-column">
         <Row className="my-3">
           <h2 className="mb-3 fs-3 fw-bold" style={{ color: "#4f9d69" }}>
-            En résumé
+            Introduction
           </h2>
           <Row>
             <Col lg={6}>
               <p className="fs-5">
-                En tant qu'étudiant en informatique, j'ai été confronté à un
-                défi personnel eintéressant : créer une boîte aux lettres
-                connectée pour répondre aux besoins de mes parents, dont la
-                boîte aux lettres était éloignée de la maison et difficile
-                d'accès. Ce projet, réalisé dans le cadre d'un module de projet
-                informatique individuel, m'a permis de mettre en pratique mes
-                compétences en électronique et en développement logiciel. Dans
-                cet article, je vais partager les détails de ce projet, de sa
-                conception à sa réalisation, ainsi que les leçons que j'ai
-                tirées de cette expérience.
+                Le projet INNOBOIS, au cœur de mon parcours d'ingénieur
+                cogniticien, représente une collaboration ambitieuse entre
+                différentes écoles et partenaires industriels. Initié par Adam
+                Packaging, entreprise spécialisée dans le packaging bois, et
+                soutenu par des associations telles que La Planche, cet effort
+                collectif vise à créer une filière novatrice de récupération des
+                co-produits bois d'Adam, dirigée vers des associations locales
+                bordelaises.
+              </p>
+              <p className="fs-5">
+                L'objectif ultime de ce projet consiste à réduire l'empreinte
+                environnementale d'Adam en transformant ces co-produits bois en
+                ressources réutilisables autrement qu'en bois-énergie. Pour ce
+                faire, un partenariat tripartite a été formé entre Sciences Agro
+                Bordeaux, spécialisée en Foresterie et Première Transformation,
+                l'École Supérieure du Bois de Nantes, experte en innovation
+                autour du bois, et mon institution, l'École Nationale Supérieure
+                de Cognitique, contribuant à l'innovation, la créativité et la
+                gestion de projet.
+              </p>
+              <p className="fs-5">
+                En plongeant dans les complexités de ce projet, j'ai occupé un
+                rôle crucial en tant que gestionnaire du projet et animateur des
+                rituels du projet et d'une séance de créativité majeure. Les
+                défis à surmonter ont été nombreux, mais chaque étape a été une
+                opportunité d'apprentissage et d'adaptation.
+              </p>
+              <p className="fs-5">
+                Au fil des lignes qui suivent, je partagerai avec vous le récit
+                de cette aventure, mettant en lumière les moments clés, les
+                ajustements nécessaires, et les compétences mobilisées pour
+                concrétiser le projet INNOBOIS.
               </p>
             </Col>
           </Row>
         </Row>
         <Row className="my-3">
           <h2 className="mb-3 fs-3 fw-bold" style={{ color: "#4f9d69" }}>
-            Description du produit
+            Début de projet
           </h2>
           <Row>
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">Hardware</h3>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={6}>
               <p className="fs-5">
-                Vu que je n'avais pas de boîte aux lettres sous la main, j'ai
-                voulu faire un appareil plug and play à insérer dans la boîte.
-                Ce choix a guidé le suivant qui était comment savoir s'il y
-                avait du contenu dans la boite : Vu que l'objet est un ajout à
-                une boite, il faut qu'il puisse marcher seul, donc pas
-                d'accéléromètre sur les ouvertures mais plutôt un capteur de
-                poids. Ainsi on peut mesurer le poids du courrier dedans.
-              </p>
-            </Col>
-            <Col className="d-flex align-items-center justify-content-center"></Col>
-          </Row>
-          <Row>
-            <Col lg={6}>
-              <p className="fs-5">
-                La deuxième question était de savoir commet communiquer
-                l'information de poids au client. Tout d'abord le filaire était
-                à exclure car la boite est en extérieur à 150m du routeur WiFi.
-                Je me suis alors dirigé vers le sans fil. Toutefois cela pose un
-                problème : le wireless est coûteux en énergie, ce qu'on cherche
-                à économiser avec les outils domotiques. L'IoT peut être mise en
-                place sur une grande variété de réseaux comme les communs WiFi,
-                4G, 5G, Bluetooth ou des réseaux prévus pour comme LoRA ou
-                Sigfox. Ces solutions radio sont très économes en énergie mais
-                nécessitent du matériel particulier. Pour réaliser un prototype,
-                je me suis orienté vers un réseau grand public et économe : le
-                Bluetooth Low Energy.
+                Les prémices du projet INNOBOIS ont été marquées par une phase
+                cruciale d'organisation et de rencontres. Au sein d'une alliance
+                impliquant diverses écoles et partenaires industriels, notre
+                objectif initial était de jeter les bases solides nécessaires à
+                la réussite de cette collaboration novatrice. Sous l'impulsion
+                d'Adam Packaging, expert en packaging bois, et avec le soutien
+                actif d'associations telles que La Planche, nous avons tracé la
+                voie vers une filière de récupération des co-produits bois
+                d'Adam, orientée vers les associations locales bordelaises.
               </p>
               <p className="fs-5">
-                D'ailleurs en parlant d'énergie, la dernière contrainte était
-                d'alimenter l'appareil en énergie et d'optimiser sa
-                consommation. Pour l'optimiser, les micrcontrôleurs modernent
-                embarquent une fonctionnalité de sommeil profond qui éteignent
-                quasiment celui-ci. Sachant que l'appareil ne serait pas utilisé
-                de nuit, cela permet de l'éteindre pendant une dizaine d'heures.
-                L'optimisation passe aussi par le choix du Bluetooth Low Energy
-                au lieu du WiFi. Pour l'alimentation, vu que c'est un
-                standalone, il fonctionne par pile mais malgré l'optimisation
-                réalisée, l'appareil viderait une pile en 1 semaine. J'ai décidé
-                d'ajouter un panneau solaire pour recharger les batteries et ne
-                pas changer constamment les piles.
+                La première réunion, qui s'est déroulée entre les écoles
+                participantes, a été orchestrée dans le but de créer une
+                synergie entre les différentes compétences. C'était l'occasion
+                de mieux comprendre qui était capable de faire quoi, de définir
+                les rôles et de s'accorder sur les informations disponibles. En
+                tant qu'animateur des rituels du projet, j'ai exercé mes
+                compétences en gestion de projet et facilitation de réunions
+                pour garantir un départ harmonieux.
               </p>
-            </Col>
-            <Col className="d-flex justify-content-center align-items-center"></Col>
-          </Row>
-          <Row>
-            <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">Software</h3>
               <p className="fs-5">
-                Le projet comporte 2 logiciels. Le premier est embarqué sur le
-                microcontrôleur ESP32 et le second est une application mobile
-                Android. Sur l'ESP il s'agit de prendre la mesure, créer un
-                serveur Bluetooth et gérer la mise en sommeil profond et sa
-                sortie. La communauté ESP/Arduino étant très active, il était
-                facile de trouver des librairies pour réaliser ces fonctions.
+                Par la suite, l'organisation de la réunion avec les clients a
+                permis de démontrer notre engagement collectif et de mieux
+                appréhender la demande initiale. Cette étape a mis en lumière la
+                nécessité de créer un front commun avec les clients pour
+                comprendre pleinement leurs attentes.
               </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={6}>
               <p className="fs-5">
-                Quant à l'application mobile, je disposais déjà de connaissances
-                en React Native et j'ai voulu explorer de nouvelles technologies
-                comme Flutter, basé sur le langage Dart. Framework de
-                développement cross-plateforme créé par Google, j'avais aussi
-                l'avantage de l'emploi natif du Material Design de Google afin
-                de styliser simplement mon application. L'objectif de cette
-                application est simple : se connecter à l'appareil en Bluetooth,
-                récupérer le poids et l'afficher.
+                Chaque étape a été une opportunité d'apprendre à travailler
+                ensemble, de surmonter les premières difficultés et d'établir un
+                terrain propice à l'innovation. Au fil des lignes suivantes, je
+                détaillerai ces moments clés, mettant en avant les actions
+                entreprises pour cimenter les bases du projet INNOBOIS.
               </p>
             </Col>
-            <Col className="d-flex justify-content-center aign-items-center"></Col>
           </Row>
         </Row>
         <Row className="my-3">
           <h2 className="mb-3 fs-3 fw-bold" style={{ color: "#4f9d69" }}>
-            Ce que j'en retiens
+            Premières visites, Créativité et Challenges
           </h2>
-          <Row className="mb-3">
+          <Row>
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">
-                Vers l'interopérabilité avec le Bluetooth
-              </h3>
               <p className="fs-5">
-                Ce projet a été pour moi l'occasion d'en apprendre plus sur des
-                thématiques avancées en informatique et en particulier
-                l'interopérabilité. Actuellement on connecte souvent des
-                appareils entre eux comme un téléphone avec des écouteurs, une
-                voiture ...
+                La phase suivante du projet INNOBOIS a été marquée par des
+                visites essentielles aux clients et aux associations. Ces
+                visites ont constitué une immersion nécessaire dans leur
+                réalité, fournissant des informations cruciales sur leurs moyens
+                matériels, fonciers, humains et financiers, ainsi que sur leurs
+                motivations profondes.
               </p>
               <p className="fs-5">
-                Le Bluetooth a plusieurs modes de fonctionnement mais celui dont
-                j'avais besoin était simple et rappelle l'architecture
-                client-serveur qu'on retrouve sur le web. Du côté serveur, on le
-                nomme et on crée des services et caractéristiques qui envoient
-                de l'information vers le périphérique connecté. On gère aussi la
-                connexion et déconnexion aux appareils. Côté client, on se
-                connecte au périphérique et à ses services et caractéristiques.
-                Enfin, on récupère les valeurs de manière asynchrone.
+                Guidé par l'objectif de comprendre au mieux les tenants et
+                aboutissants du projet, j'ai contribué à la réalisation d'un
+                guide de visite détaillé. Cet outil s'est avéré précieux pour
+                structurer nos observations et garantir la collecte
+                d'informations pertinentes.
+              </p>
+              <p className="fs-5">
+                L'étape suivante a été la co-animation d'une séance de
+                créativité C-K avec M. Philippe BLANCHARD, professeur de l'École
+                Supérieure du Bois de Nantes. En partant du concept initial
+                "Adam sans déchets", cette séance a été le catalyseur d'une
+                première idée d'innovation socio-technique. La méthode C-K a été
+                une boussole, nous permettant d'explorer de nouveaux concepts et
+                d'élargir notre vision du projet.
+              </p>
+              <p className="fs-5">
+                Les visites se sont poursuivies, chacune apportant son lot
+                d'informations nouvelles. Cependant, le projet n'a pas été sans
+                défis, dont certains ont émergé à la suite de la première idée
+                innovante. Nous avons dû repenser notre approche, réajuster
+                notre compréhension des besoins clients, et rechercher des
+                alternatives plus viables.
+              </p>
+              <p className="fs-5">
+                Au travers de ces visites et séances créatives, chaque défi a
+                été une occasion de renforcer nos compétences en gestion de
+                projet, d'innovation, et d'adaptation aux réalités du terrain.
+                Dans les sections à suivre, je partagerai en détail ces
+                expériences, mettant en avant les ajustements nécessaires pour
+                faire progresser le projet INNOBOIS.
               </p>
             </Col>
           </Row>
+        </Row>
+        <Row className="my-3">
+          <h2 className="mb-3 fs-3 fw-bold" style={{ color: "#4f9d69" }}>
+            Nouvelle idée et Finalisation du projet
+          </h2>
           <Row>
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">Gérer un projet de A à Z</h3>
               <p className="fs-5">
-                Le projet a commencé par une phase de planification avec le
-                cahier des charges où j'ai dimensionné le projet afin de ne pas
-                finir en retard : activités de code, prise en compte de la
-                commande de pièces électroniques, présentations ... Lors du
-                projet j'avais des points avec mes tuteurs afin de veuiller au
-                bon déroulement du projet. Celui-ci s'est achevé par une
-                soutenance orale afin de prendre du recul sur ce que j'ai fait.
+                Au cours de cette phase cruciale du projet INNOBOIS, nous avons
+                atteint un point intermédiaire avec les clients, présentant nos
+                avancées et recevant leurs retours. Ce moment charnière a été
+                l'occasion de confronter notre première idée innovante à la
+                réalité du terrain. Les retours ont été francs, soulignant les
+                aspects irréalisables financièrement et les imprévus
+                logistiques.
+              </p>
+              <p className="fs-5">
+                La deuxième vague de visites a renforcé ces constats, montrant
+                que la première idée, bien qu'intéressante, était loin d'être
+                praticable. L'étape suivante a été une entrevue avec M. Yann
+                BOUCHERY, expert en logistique durable de Kedge Bordeaux. Cette
+                rencontre a été déterminante, remettant en question notre
+                approche et guidant la naissance d'une seconde idée plus
+                réaliste.
+              </p>
+              <p className="fs-5">
+                La seconde idée, axée sur un tri préalable des déchets
+                intéressants chez Adam et une gestion plus fine de la
+                logistique, a émergé comme une solution plus pragmatique. Ce
+                pivot stratégique a été difficile, mais il a démontré notre
+                capacité à réagir face aux défis et à évoluer pour répondre aux
+                besoins du projet.
+              </p>
+              <p className="fs-5">
+                Enfin, la présentation finale des résultats aux clients a été
+                l'aboutissement de cette itération continue. Tant à l'écrit qu'à
+                l'oral, nous avons exposé notre démarche, les ajustements
+                effectués, et la vision finale pour la filière de récupération
+                des co-produits bois d'Adam.
+              </p>
+              <p className="fs-5">
+                Dans les sections qui suivent, je détaillerai ces moments
+                déterminants, mettant en lumière les décisions cruciales prises
+                et les compétences mobilisées pour conduire le projet INNOBOIS
+                vers sa conclusion.
               </p>
             </Col>
-            <Col className="d-flex justify-content-center align-items-center"></Col>
           </Row>
+        </Row>
+        <Row className="my-3">
+          <h2 className="mb-3 fs-3 fw-bold" style={{ color: "#4f9d69" }}>
+            Conclusion et Enseignements Tirés
+          </h2>
           <Row>
             <Col lg={6}>
-              <h3 className="mb-3 fs-4 fw-bold">
-                Faut-il forcément verser vers le technologique ?
-              </h3>
               <p className="fs-5">
-                La première contrainte du projet était de faire de
-                l'informatique. Toutefois j'ai conclu mon projet en présentant
-                une interface courante en Amérique-Nord, entièrement mécanique
-                et qui permet de savoir si une boîte aux lettres n'est pas vide.
-                Et oui en Amérique, on avait déjà la réponse. Il fallait juste
-                avoir une habitude pour le facteur de bouger un manche et pour
-                l'utilisateur de le baisser.
+                Le projet INNOBOIS a été une aventure riche en défis et en
+                découvertes, marquant une étape significative dans mon parcours
+                d'ingénieur cogniticien. Tout au long de cette collaboration
+                complexe, plusieurs enseignements clés ont émergé, façonnant ma
+                compréhension de la gestion de projet, de l'innovation, et de la
+                collaboration interdisciplinaire.
               </p>
               <p className="fs-5">
-                Ainsi, le projet aurait pu prendre des tournures différentes :
-                susciter le même comportement par des nudges, automatiser
-                mécaniquement le principe : déclencher des ressorts à
-                l'ouverture ...
+                L'exploration initiale du concept "Adam sans déchets" a mis en
+                évidence l'importance de comprendre les réalités du terrain dès
+                le début du projet. Les visites aux clients et les séances de
+                créativité ont été des catalyseurs essentiels, mais elles ont
+                également révélé la nécessité de rester adaptable face aux
+                nouvelles informations.
+              </p>
+              <p className="fs-5">
+                Le pivot stratégique vers une deuxième idée, guidé par les
+                retours des clients et l'expertise de M. Yann BOUCHERY, a
+                illustré la valeur de la réactivité et de la remise en question
+                constante. Cette évolution a montré qu'une idée initiale, aussi
+                prometteuse soit-elle, peut nécessiter des ajustements majeurs
+                pour être réaliste et réalisable.
+              </p>
+              <p className="fs-5">
+                La gestion des implications variables au sein de l'équipe a été
+                un défi, mais le fait d'encourager la responsabilisation
+                individuelle et de favoriser la participation collective a
+                contribué à maintenir une dynamique positive.
+              </p>
+              <p className="fs-5">
+                En conclusion, le projet INNOBOIS a été un laboratoire
+                d'apprentissage pratique, où chaque obstacle a été une
+                opportunité d'affiner mes compétences et de repenser nos
+                approches. Les leçons tirées de cette expérience continueront de
+                nourrir mon développement professionnel, renforçant ma capacité
+                à aborder de manière proactive les défis complexes du monde
+                réel.
               </p>
             </Col>
           </Row>
