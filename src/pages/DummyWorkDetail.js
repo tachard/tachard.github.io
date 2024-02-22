@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import Banner from "../components/Banner";
 
 const DummyWorkDetail = () => {
@@ -42,9 +42,11 @@ const DummyWorkDetail = () => {
               <p className="fs-5">
                 Le projet INNOBOIS, au cœur de mon parcours d'ingénieur
                 cogniticien, représente une collaboration ambitieuse entre
-                différentes écoles et partenaires industriels. Initié par Adam
-                Packaging, entreprise spécialisée dans le packaging bois, et
-                soutenu par des associations telles que La Planche, cet effort
+                différentes écoles et partenaires industriels. Initié par{" "}
+                <a href="https://www.adampack.com/">Adam Packaging</a>,
+                entreprise spécialisée dans le packaging bois, et soutenu par
+                des associations telles que{" "}
+                <a href="https://laplanche-bois.fr/">La Planche</a>, cet effort
                 collectif vise à créer une filière novatrice de récupération des
                 co-produits bois d'Adam, dirigée vers des associations locales
                 bordelaises.
@@ -141,6 +143,19 @@ const DummyWorkDetail = () => {
                 structurer nos observations et garantir la collecte
                 d'informations pertinentes.
               </p>
+            </Col>
+            <Col className="d-flex align-items-center justify-content-center">
+              <div className="my-2 d-flex flex-column align-items-center">
+                <Image
+                  className="object-fit-contain w-75 rounded"
+                  src="../img/IMG_6428.jpg"
+                />
+                <p className="fst-italic mt-1">Benne de co-produits d'Adam</p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
               <p className="fs-5">
                 L'étape suivante a été la co-animation d'une séance de
                 créativité C-K avec M. Philippe BLANCHARD, professeur de l'École
@@ -150,6 +165,20 @@ const DummyWorkDetail = () => {
                 une boussole, nous permettant d'explorer de nouveaux concepts et
                 d'élargir notre vision du projet.
               </p>
+            </Col>
+            <Col className="d-flex align-items-center justify-content-center">
+              <div className="my-2 d-flex flex-column align-items-center">
+                <Image
+                  className="object-fit-contain w-75
+                   rounded"
+                  src="https://docs.google.com/drawings/d/e/2PACX-1vQGgXLsnOSwZCibCyOgRjVnj8JXLLnnZdotij9qBtgiZxXN0npNBEvFikhff67a_U332Rmodxotkx1I/pub?w=1375&h=983"
+                />
+                <p className="fst-italic mt-1">Extrait du C-K réalisé</p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
               <p className="fs-5">
                 Les visites se sont poursuivies, chacune apportant son lot
                 d'informations nouvelles. Cependant, le projet n'a pas été sans
