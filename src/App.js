@@ -3,6 +3,7 @@ import "holderjs";
 import NavBar from "./components/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const handleScrollToTop = () => {
@@ -23,6 +24,7 @@ function App() {
       <ScrollToTop />
       <NavBar />
       <Outlet />
+      <Footer />
     </>
   );
 }

@@ -35,7 +35,7 @@ const Work = () => {
             </p>
           </Row>
         </Col>
-        <Col xs={2}></Col>
+        <Col xs={1} md={2}></Col>
       </Row>
       <Row
         xs={1}
