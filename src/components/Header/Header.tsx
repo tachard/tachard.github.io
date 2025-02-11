@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Burger, Container, Group, Title, Box, Drawer, ScrollArea, Divider, Stack } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Header.module.css';
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const links = [
   { link: '/', label: 'Projets' },
@@ -13,6 +13,12 @@ const links = [
 export function Header() {
   const [opened, { toggle:toggleDrawer, close:closeDrawer }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Mettre à jour l'état active en fonction de l'URL actuelle
+    setActive(location.pathname);
+  }, [location]);
 
   const items = links.map((link) => (
     <NavLink
@@ -31,7 +37,7 @@ export function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
       <Title order={1} size="h4">Thomas Achard portfolio</Title>
-        <Group gap={5} visibleFrom="xs">
+        <Group gap={8} visibleFrom="xs">
             {items}
             <a href="https://www.linkedin.com/in/thomas-achard-ux/">
                 <IconBrandLinkedinFilled size={32} color="#0A66C2"/>
