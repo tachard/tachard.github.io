@@ -1,5 +1,4 @@
-import { IconHeart } from '@tabler/icons-react';
-import { ActionIcon, Badge, Button, Card, Group, Image, Text } from '@mantine/core';
+import { Badge, Button, Card, Group, Image, Text } from '@mantine/core';
 import classes from './BadgeCardVertical.module.css';
 import { NavLink } from 'react-router-dom';
 
@@ -37,7 +36,7 @@ export class BadgeCardContent {
 }
 const mockdata = new BadgeCardContent({
     id: 1,
-    projectType: "Projet Professionnel",
+    projectType: "Professionnel",
     image:
     'https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80',
     title: 'Verudela Beach',
@@ -79,7 +78,7 @@ export function BadgeCardVertical() {
         <Text fz="sm" mt="xs" className={classes.label} c='dimmed'>
           {`${mockdata.dateDebut.toLocaleDateString()} - ${mockdata.dateFin === null ? "" : mockdata.dateFin.toLocaleDateString()}`}
         </Text>
-        <Text fz="sm" mt="xs">
+        <Text fz="sm" mt="xs" lineClamp={3}>
           {mockdata.description}
         </Text>
       </Card.Section>
