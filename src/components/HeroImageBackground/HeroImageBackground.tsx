@@ -1,5 +1,4 @@
-import cx from 'clsx';
-import { Avatar, Box, Button, Container, Grid, Image, Overlay, Stack, Text, Title } from '@mantine/core';
+import { Box, Button, Container, Image, Overlay, SimpleGrid, Stack, Text, Title } from '@mantine/core';
 import classes from './HeroImageBackground.module.css';
 import { NavLink } from 'react-router-dom';
 
@@ -9,8 +8,7 @@ export function HeroImageBackground() {
       <Overlay color="#000" opacity={0.65} zIndex={1} />
 
       <Container className={classes.inner}>
-        <Grid gutter="xl">
-            <Grid.Col span={{xs:12,sm:6}}>
+        <SimpleGrid cols={{xs:1,sm:2}} spacing="xl">
                 <Stack align='center' gap="md">
                     <Image className={classes.profilePicture} h={200} w={200} fit="contain" src="https://placehold.co/200x200?text=PP"/>
                     <Stack gap={8}>
@@ -18,16 +16,13 @@ export function HeroImageBackground() {
                         <Title order={3} size="h2" className={classes.title} p={0} m={0}>Ingénieur cogniticien</Title>
                     </Stack>
                 </Stack>
-            </Grid.Col>
-            <Grid.Col span={{xs:12, sm:6}}>
                 <Stack align='center' gap="lg">
                     <Text size="lg" className={classes.description} lineClamp={9}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </Text>
                     <NavLink to="about"><Button size="md" variant='white'>En savoir plus</Button></NavLink>
                 </Stack>
-            </Grid.Col>
-        </Grid>
+        </SimpleGrid>
       </Container>
     </Box>
   );
