@@ -1,13 +1,17 @@
 import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
-import { Router } from './Router';
+import { Outlet } from 'react-router-dom';
 import { theme } from './theme';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
 
 export default function App() {
   return (
     <MantineProvider theme={theme}>
-      <Router />
+      <Header />
+      <Outlet />
+      <Footer />
     </MantineProvider>
   );
 }

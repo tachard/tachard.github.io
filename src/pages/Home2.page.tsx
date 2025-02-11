@@ -1,9 +1,9 @@
-import { Header } from "../components/Header/Header";
+import { Container, Text } from "@mantine/core";
 
 export function HomePage() {
   return (
-    <>
-      <Header/>
-    </>
+    <Container>
+      <Text>Home page</Text>
+    </Container>
   );
 }

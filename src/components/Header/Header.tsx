@@ -1,12 +1,13 @@
 import { useState } from 'react';
-import { Burger, Container, Group, Title, Box, Drawer, ScrollArea, Divider, Stack, Button } from '@mantine/core';
+import { Burger, Container, Group, Title, Box, Drawer, ScrollArea, Divider, Stack } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Header.module.css';
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
+import { NavLink } from 'react-router-dom';
 
 const links = [
   { link: '/', label: 'Projets' },
-  { link: '/about-me', label: 'À propos de moi' },
+  { link: '/about', label: 'À propos de moi' },
 ];
 
 export function Header() {
@@ -14,18 +15,14 @@ export function Header() {
   const [active, setActive] = useState(links[0].link);
 
   const items = links.map((link) => (
-    <a
+    <NavLink
       key={link.label}
-      href={link.link}
-      className={classes.link}
-      data-active={active === link.link || undefined}
+      to={link.link}
+      className={`${classes.link} ${active === link.link ? classes.active : ''}`}
       onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
-      }}
-    >
+        setActive(link.link);}} >
       {link.label}
-    </a>
+    </NavLink>
   ));
 
   return (
