@@ -20,13 +20,14 @@ export function Header() {
       to={link.link}
       className={`${classes.link} ${active === link.link ? classes.active : ''}`}
       onClick={(event) => {
-        setActive(link.link);}} >
+        setActive(link.link);
+        closeDrawer();}} >
       {link.label}
     </NavLink>
   ));
 
   return (
-    <Box pb={120}>
+    <Box>
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
       <Title order={1} size="h4">Thomas Achard portfolio</Title>
