@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom';
 export function HeroImageBackground() {
   return (
     <Box className={classes.wrapper}>
-      <Overlay color="#000" opacity={0.65} zIndex={1} />
+      <Overlay color="#000" opacity={0.35} zIndex={1} />
 
       <Container className={classes.inner}>
         <SimpleGrid cols={{xs:1,sm:2}} spacing="xl">
                 <Stack align='center' gap="md">
-                    <Image className={classes.profilePicture} h={200} w={200} fit="contain" src="https://placehold.co/200x200?text=PP"/>
+                    <Image className={classes.profilePicture} h={200} w={200} fit="contain" src="/src/assets/ProfilePicture.jpg"/>
                     <Stack gap={8}>
                         <Title order={2} size="h1" className={classes.title} p={0} m={0}>Thomas Achard</Title>
                         <Title order={3} size="h2" className={classes.title} p={0} m={0}>Ingénieur cogniticien</Title>

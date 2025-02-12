@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-            <Text>Made with ❤️ by myself.</Text>
+            <Text>Made with ❤️ by myself (and Mantine and GitHub Pages)</Text>
       </Container>
     </div>
   );
