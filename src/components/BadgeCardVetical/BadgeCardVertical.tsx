@@ -72,7 +72,7 @@ export function BadgeCardVertical({content}:{content:BadgeCardContent}) {
       </Card.Section>
 
       <Group mt="md">
-        <NavLink to={`/projects/${content.id}`}>
+        <NavLink to={`/project/${content.id}`}>
             <Button radius="md" style={{ flex: 1 }}>
                 En savoir plus sur ce projet
             </Button>
