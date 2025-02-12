@@ -1,11 +1,12 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import { HeroImageBackground } from "@/components/HeroImageBackground/HeroImageBackground";
+import { Container,} from "@mantine/core";
+import { ProjectsList } from "@/components/ProjectsList/ProjectsList";
 
 export function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <Container fluid p={0}>
+      <HeroImageBackground />
+      <ProjectsList />
+    </Container>
   );
 }
