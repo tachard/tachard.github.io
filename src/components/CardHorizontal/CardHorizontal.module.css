@@ -2,10 +2,17 @@
   display: flex;
   flex-direction:row;
   background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+
+  @media (max-width: $mantine-breakpoint-xs){
+    flex-direction:column;
 }
+}
+
+
 
 .firstSection {
   flex: 1;
+
 }
 
 .secondSection {

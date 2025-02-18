@@ -35,18 +35,18 @@ export function CardHorizontal({content}:{content:ICardHorizontalContent}) {
 
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
-      <Card.Section m={0} pr="md" className={classes.firstSection}>
-        <Stack align="center">
+      <Card.Section withBorder className={classes.firstSection}>
+        <Stack m="md" align="center">
           <Image src={content.image} alt={content.title} height={180} style={{flex:1}} />
-          <Stack align="center" gap="xs">
-            <Title order={4}>{content.title}</Title>
+          <Stack justify="center" align="center" gap="xs">
+            <Title order={4} style={{"textAlign": "center"}}>{content.title}</Title>
             <Text fs={"italic"}>{content.dateDebut.toLocaleDateString()} - {content.dateFin ? content.dateFin.toLocaleDateString() : ""}</Text>
             <Text>{content.place}</Text>
           </Stack>
         </Stack>
       </Card.Section>
 
-      <Card.Section m={0} px="md" className={classes.secondSection}>
+      <Card.Section m={0} p="md" className={classes.secondSection}>
           <Text fz="sm" component='div' dangerouslySetInnerHTML={{__html:content.description}} />
       </Card.Section>
     </Card>
