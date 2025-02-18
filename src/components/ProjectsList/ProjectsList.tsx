@@ -115,7 +115,7 @@ export function ProjectsList(){
     return(
         <Container py={120}>
             <SimpleGrid cols={{sm:1, md:2}} spacing="xl">
-                {list.map((content, index)=>(<BadgeCardVertical content={new BadgeCardContent(content)}/>))}
+                {list.map((content, index)=>(<BadgeCardVertical key={index} content={new BadgeCardContent(content)}/>))}
             </SimpleGrid>
         </Container>
     );

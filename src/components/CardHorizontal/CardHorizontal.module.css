@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  flex-direction:row;
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+}
+
+.firstSection {
+  flex: 1;
+}
+
+.secondSection {
+  flex: 2;
+}
