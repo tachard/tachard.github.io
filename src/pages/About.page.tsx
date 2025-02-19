@@ -1,6 +1,6 @@
 import { Container, Stack, Text, Title } from "@mantine/core";
-import classes from "./About.module.css";
 import { CardHorizontal, CardHorizontalContent } from "@/components/CardHorizontal/CardHorizontal";
+import { BetterTitle } from "@/components/BetterTitle/BetterTitle";
 
 export function About() {
     const WorkXpContent = [
@@ -62,21 +62,15 @@ export function About() {
     return (
         <Container>
             <Container fluid py={120}>
-                <Stack align="center" className={classes.title} pb={20} mb={60}>
-                    <Title order={2} size="h1">À propos de moi</Title>
-                </Stack>
-                <Stack className={classes.title} pb={20} mb={30}>
-                    <Title order={3} size="h2">Expériences professionnelles</Title>
-                </Stack>
+                <BetterTitle align="center" mb={60} order={2} size="h1">À propos de moi</BetterTitle>
+                <BetterTitle align="flex-start" mb={30} order={3} size="h2">Expériences professionnelles</BetterTitle>
                 <Stack pb={30} gap="xl">
                     {WorkXpContent.map((content,index) => (
                         <CardHorizontal key={index} content={new CardHorizontalContent(content)}/>
                     ))}
                     
                 </Stack>
-                <Stack className={classes.title} pb={20} mb={30}>
-                    <Title order={3} size="h2">Formation</Title>
-                </Stack>
+                <BetterTitle align="flex-start" mb={30} order={3} size="h2">Formation</BetterTitle>
                 <Stack pb={30} gap="xl">
                     {EducContent.map((content,index) => (
                         <CardHorizontal key={index} content={new CardHorizontalContent(content)}/>
