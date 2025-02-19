@@ -8,11 +8,11 @@
 }
 }
 
-
-
 .firstSection {
   flex: 1;
-
+  @media (max-width: $mantine-breakpoint-xs){
+    border-bottom: calc(0.0625rem * var(--mantine-scale)) solid var(--mantine-color-gray-3);
+}
 }
 
 .secondSection {

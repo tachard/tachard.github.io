@@ -35,7 +35,7 @@ export function CardHorizontal({content}:{content:ICardHorizontalContent}) {
 
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
-      <Card.Section withBorder className={classes.firstSection}>
+      <Card.Section className={classes.firstSection}>
         <Stack m="md" align="center">
           <Image src={content.image} alt={content.title} height={180} style={{flex:1}} />
           <Stack justify="center" align="center" gap="xs">
