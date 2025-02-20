@@ -5,14 +5,15 @@ import classes from "./BetterTitle.module.css";
 interface CustomTitleProps {
     align: 'stretch' | 'center' | 'flex-start' | 'flex-end';
     mb: number;
+    pb? : number;
     order: 1 | 2 | 3 | 4 | 5 | 6;
     size: string;
-    children: ReactNode;
+    children?: ReactNode;
 }
 
-export function BetterTitle({align,mb,order,size,children}:CustomTitleProps) {
+export function BetterTitle({align,mb,pb,order,size,children}:CustomTitleProps) {
     return(
-        <Stack align={align} className={classes.title} pb={20} mb={mb}>
+        <Stack align={align} className={classes.title} pb={pb ? pb : 20} mb={mb}>
             <Title order={order} size={size}>{children}</Title>
         </Stack>
     );
