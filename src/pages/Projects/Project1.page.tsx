@@ -20,7 +20,7 @@ export function Project1(){
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conception</BetterTitle>
-            <BetterTitle align="flex-start" mb={30} pb={5} order={4} size="h3">Forme</BetterTitle>
+            <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Forme</BetterTitle>
             <Grid gutter="xl" mb={20}>
                 <Grid.Col span={8}>
                     <Text>
@@ -36,10 +36,12 @@ export function Project1(){
                                 un blog avec des billets plus courts.
                             </ListItem>
                             <ListItem>
-                                Le format des contenus est le même, ce qu'a remarqué le Nielsen-Norman Group aussi : La page d'accueil 
+                                Le format des contenus est le même, {" "}
+                                <Anchor href="https://www.nngroup.com/articles/ux-design-portfolios/?lm=ux-researcher-portfolio&pt=article" underline="hover">ce qu'a remarqué le Nielsen-Norman Group</Anchor> aussi : La page d'accueil 
                                 est une collection d'éléments présentant succintement des projets définis.
                             </ListItem>
                         </List>
+                        Vu que ce modèle revient souvent, j'ai décidé de le suivre pour assurer une expérience assez conforme aux autres portfolios.
                     </Text>
                 </Grid.Col>
                 <Grid.Col span={4}>
@@ -63,12 +65,25 @@ export function Project1(){
                     Les avantages sont que les composants sont pré-faits et la direction artistique est tout à fait satisfaisante. 
                     De plus, je peux tout à fait rajouter du CSS au-dessus et modifier le thème général.<br/>
                     Ainsi, sur Figma, j'ai surtout à créer une maquette moyenne fidelité avec des choix simples pour la DA, sachant que 
-                    Mantine assuerera un résultat plus propre. Ma direction artistique est simple : quelque chose de professionnel et plutôt monochrome 
+                    Mantine assurera un résultat plus propre. Ma direction artistique est simple : quelque chose de professionnel et plutôt monochrome 
                     avec une touche de vert.
                 </Text>
             </Group>
             <Image mb={20} src="/src/assets/Portfolio_Wireframe.png"/>
-            <BetterTitle align="flex-start" mb={30} pb={5} order={4} size="h3">Contenus</BetterTitle>
+            <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Contenus</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                    Pour le contenu, la partie présentation de soi (About) vient assez naturellement : c'est le moment de recouper avec mon CV ou mon profil LinkedIn
+                    tout ce qui est générique : expériences professionnelles et formation.<br/>
+                    Pour les projets c'est plus délicat. Pour les projets scolaires ou personnels, je n'ai pas de soucis à en parler, 
+                    si je retrouve les artéfacts. Pour les projets professionnels, ceux-ci sont couverts par des accords de confidentialité. 
+                    J'ai donc essayé de trouver des moyens pour ne pas rompre ces accords : anonymisation, généralisation, focus sur le processus, masquage d'éléments.<br/>
+                    Pour le choix des projets, celui-ci a été plutôt facile. J'ai commencé par les projets professionnels, qui montrent la versatilité de mon profil.
+                    Ensuite, je voulais aborder ce portfolio comme réflexion sur ce que j'ai fait. Enfin, je ne veux montrer que 6 projets car plus de projets montrés provoquerait 
+                    de la surcharge mentale. Cela laisse donc la possibilité de parler d'un projet académique. Celui-ci porte sur une autre comprétence que j'avais pas abordé avant : 
+                    l'accessibilité.
+                </Text>
+            </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Développement</BetterTitle>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Déploiement</BetterTitle>
         </Container>
