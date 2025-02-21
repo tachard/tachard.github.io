@@ -21,36 +21,38 @@ export function Project1(){
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conception</BetterTitle>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Forme</BetterTitle>
-            <Grid gutter="xl" mb={20}>
-                <Grid.Col span={8}>
-                    <Text>
-                        La première étape de conception était de voir ce qui se faisait, tant pour la forme que le fond.
-                        Et donc tout a commencé par une recherche internet. Je suis tombé sur{" "}
-                        <Anchor href="https://blog.uxfol.io/ux-portfolio-examples/" underline="hover">cet article d'UXfolio</Anchor>.
-                        En passant en revue ces 23 exemples, on voit des similarités :
-                        <List withPadding>
-                            <ListItem>
-                                L'architecture du site est souvent la même : une page d'accueil qui liste plusieurs projets, 
-                                une page de présentation (About) et une manière de contacter la personne (présence d'une adresse mail, 
-                                d'un lien vers LinkedIn ou d'un formulaire de contact). Eventuellement, certains designers ont aussi 
-                                un blog avec des billets plus courts.
-                            </ListItem>
-                            <ListItem>
-                                Le format des contenus est le même, {" "}
-                                <Anchor href="https://www.nngroup.com/articles/ux-design-portfolios/?lm=ux-researcher-portfolio&pt=article" underline="hover">ce qu'a remarqué le Nielsen-Norman Group</Anchor> aussi : La page d'accueil 
-                                est une collection d'éléments présentant succintement des projets définis.
-                            </ListItem>
-                        </List>
-                        Vu que ce modèle revient souvent, j'ai décidé de le suivre pour assurer une expérience assez conforme aux autres portfolios.
-                    </Text>
-                </Grid.Col>
-                <Grid.Col span={4}>
-                    <Stack>
-                        <Image src="/src/assets/Portfolio_Architecture.png"/>
-                        <Image src="https://media.nngroup.com/media/editor/2019/06/27/portfolio_web.png"/>
-                    </Stack>
-                </Grid.Col>
-            </Grid>
+            <Group>
+                <Grid className={classes.grid} gutter="xl" mb={20}>
+                    <Grid.Col span={{xs:12, sm:8}}>
+                        <Text span>
+                            La première étape de conception était de voir ce qui se faisait, tant pour la forme que le fond.
+                            Et donc tout a commencé par une recherche internet. Je suis tombé sur{" "}
+                            <Anchor href="https://blog.uxfol.io/ux-portfolio-examples/" underline="hover">cet article d'UXfolio</Anchor>.
+                            En passant en revue ces 23 exemples, on voit des similarités :
+                            <List withPadding>
+                                <ListItem>
+                                    L'architecture du site est souvent la même : une page d'accueil qui liste plusieurs projets, 
+                                    une page de présentation (About) et une manière de contacter la personne (présence d'une adresse mail, 
+                                    d'un lien vers LinkedIn ou d'un formulaire de contact). Eventuellement, certains designers ont aussi 
+                                    un blog avec des billets plus courts.
+                                </ListItem>
+                                <ListItem>
+                                    Le format des contenus est le même, {" "}
+                                    <Anchor href="https://www.nngroup.com/articles/ux-design-portfolios/?lm=ux-researcher-portfolio&pt=article" underline="hover">ce qu'a remarqué le Nielsen-Norman Group</Anchor> aussi : La page d'accueil 
+                                    est une collection d'éléments présentant succintement des projets définis.
+                                </ListItem>
+                            </List>
+                            Vu que ce modèle revient souvent, j'ai décidé de le suivre pour assurer une expérience assez conforme aux autres portfolios.
+                        </Text>
+                    </Grid.Col>
+                    <Grid.Col span={{xs:12, sm:4}}>
+                        <Stack>
+                            <Image src="/src/assets/Portfolio_Architecture.png"/>
+                            <Image src="https://media.nngroup.com/media/editor/2019/06/27/portfolio_web.png"/>
+                        </Stack>
+                    </Grid.Col>
+                </Grid>
+            </Group>
             <Group>
                 <Text mb={20}>
                     La seconde étape a alors été de concevoir une maquette de ce portfolio. Pour cela j'ai utilisé 
@@ -85,7 +87,24 @@ export function Project1(){
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Développement</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                    Étant donné que l'informatique (web) consistue une bonne part de ma formation d'ingénieur cogniticien, un portfolio est un 
+                    bon projet pour montrer mes capacités de programmation. Pour la stack, j'ai utilisé TypeScript avec React et Vite pour créer 
+                    ce site qui n'a pas de backend. Plus précidément j'ai utilisé Mantine et react-router-dom pour me faciliter les choses avec 
+                    la direction artistique et le routage. <br/>
+                    Comme dit précédemment ma direction artistique est un site professionnel jouant sur les nuances de gris et avec des touches de vert. 
+                    Sur Mantine, il est possible de définir un thème personnalisé où l'on modifie les design tokens fournis. Pour ma part, j'ai simplement 
+                    mis la couleur primaire sur "vert". J'ai utilisé les composants fournis par Mantine et j'ai utilisé{" "}
+                    <Anchor href="https://ui.mantine.dev" underline="hover">la bibliothèque de composants Mantine</Anchor> pour les éléments plus complexes 
+                    comme les Cards. Toutefois les cartes sur About n'étant pas présentes dans la biliothèque, j'ai modifié leur code pour passer au format 
+                    horizontal. <br/>
+                    Un point important pour moi est aussi de créer un site responsive. En reprenant les breakpoints fournis par Mantine, j'ai rendu tous 
+                    les composants que j'utilise responsive via des modifications post-css.<br/>
+                </Text>
+            </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Déploiement</BetterTitle>
+            <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conclusion</BetterTitle>
         </Container>
     );
 }
