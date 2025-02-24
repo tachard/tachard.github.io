@@ -11,7 +11,7 @@ export function Project2(){
                 <Text mb={60}>
                     Un fabricant commercialise un appareil médical depuis plus de 20 ans. Il souhaite créer une nouvelle itération de son 
                     appareil mais au goût du jour (esthétique plus moderne, écran tactile au lieu de boutons et prise en charge de nouvelles 
-                    fonctionnalités). Ce projet de maquettage se situe en phase amont du projet où l'idée était de concevoir les écrans
+                    fonctionnalités). Ce projet de maquettage sur Axure se situe en phase amont du projet où l'idée était de concevoir les écrans
                     et une fois validés par l'équipe projet et des tests utilisateurs, de les porter sur le prototype de l'appareil.<br/>
                     L'équipe-projet se compose comme suit : moi-même et une autre ergonome et du côté client un chef de projet clinique,
                     un expert clinique, un chef de projet software et un chef de projet QARA.
@@ -87,6 +87,15 @@ export function Project2(){
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Tester la maquette</BetterTitle>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Préparation</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                    Pour tester la maquette, le pré-requis était de fixer l'avancée de la maquette et de la modifier afin qu'elle puisse supporter le parcours prévu par le test.
+                    D'un autre côté, il a fallu aussi préparer le protocole de test. Pour cette évaluation formative, les objectifs du test étaient clairs :
+                    faire tester auprès d'utilisateurs réels la maquette pour avoir leur avis et trancher certaines questions laissées en suspens pendant le maquettage.
+                    Ainsi les tests se sont déroulés en 3 temps : une exploration guidée de la maquette, fidèle à ce qu'on attendrait des utilisateurs en situation réelle,
+                    des questions spécifiques sur certains éléments et un questionnaire de débriefing pour avoir l'opnion sur l'utilisabilité perçue.
+                </Text>
+            </Group>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Passation</BetterTitle>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Analyse des résultats</BetterTitle>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Organisation projet</BetterTitle>
