@@ -93,11 +93,43 @@ export function Project2(){
                     D'un autre côté, il a fallu aussi préparer le protocole de test. Pour cette évaluation formative, les objectifs du test étaient clairs :
                     faire tester auprès d'utilisateurs réels la maquette pour avoir leur avis et trancher certaines questions laissées en suspens pendant le maquettage.
                     Ainsi les tests se sont déroulés en 3 temps : une exploration guidée de la maquette, fidèle à ce qu'on attendrait des utilisateurs en situation réelle,
-                    des questions spécifiques sur certains éléments et un questionnaire de débriefing pour avoir l'opnion sur l'utilisabilité perçue.
+                    des questions spécifiques sur certains éléments et un questionnaire de débriefing pour avoir l'opinion sur l'utilisabilité perçue.<br/>
+                    Quant au recrutement des testeurs, c'est le client qui s'est chargé de cela.
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Passation</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                    La maquette étant entièrement numérique et accessible sur Axure Cloud, les tests ont pu se dérouler en remote et avec des testeurs anglophones.
+                    L'avantage est que le recrutement a pu être plus aisé pour ces 7 testeurs et on a pu atteindre différents profils interne à l'entreprise cliente :
+                    spécialiste clinique, QARA, électronique, informatique, traduction ...<br/>
+                    Les deux plus grandes difficultés de ces tests ont été d'abord de dimensionner le test. Il était prévu au départ de faire des tests d'une heure. 
+                    Toutefois, j'ai été surpris par le jalon à atteindre pour le test. La maquette en tant que telle était de très haute fidélité avec des interactions complexes,
+                    et couvrant tout le user journey. La durée des tests a donc explosé avec des tests de 2h30, ce qui est épuisant tant pour moi que pour le testeur.<br/>
+                    La deuxième plus grande difficulté était de "jouer la machine" avec ce setup remote. En effet l'appareil est censé produire des réponses sur l'écran
+                    à partir d'actions physiques sur l'appareil. N'ayant pas d'appareil physique, je devais simuler ces réponses automatiques (lancer des interactions cachées).
+                    Cela suppose donc que j'aie accès à l'écran du testeur. Cette option est possible sur Teams mais avec plusieurs conditions : les deux protagonistes doivent 
+                    utiliser la version desktop de Teams et le testeur doit approuver cela. Ainsi il y a souvent eu des problèmes et le testeur a du jouer soi-même et la machine,
+                    ce qui a rendu certains testeurs confus. 
+                </Text>
+            </Group>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Analyse des résultats</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                    L'analyse des résultats était assez directe. Dans le protocole (et d'après la norme), il est défini que les comportements attendus soient côtés de la manière suivante :
+                    <ul>
+                        <li>Succès : le participant a réussi la tâche.</li>
+                        <li>Difficulté : le participant a réussi la tâche difficilement.</li>
+                        <li>Presqu'erreur : L'utilisateur a commencé à commettre une erreur mais s'est rattrapé.</li>
+                        <li>Utilisation anormale : L'utilisateur sait ce qu'il est censé faire mais agit autrement pour diverses raisons (efficacité, malhonnêteté ...).</li>
+                        <li>Échec : L'utilisateur n'a pas le comportement attendu ou il a été.</li>
+                    </ul>
+                    Ainsi, selon les comportements et verbatims du patient, j'ai côté les critères de succès, en ajoutant des notes, le but d'une 
+                    évaluation formative étant d'obtenir de l'information pour guider la suite de la conception. <br/>
+                    Pour le questionnaire de fin de test, il s'agit du SUS qui est standardisé et d'échelles de Likert afin de recueillir 
+                    l'utilisabilité perçue sur différents points, ce qui n'est pas intensif 
+                </Text>
+            </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Organisation projet</BetterTitle>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conclusion</BetterTitle>
         </Container>
