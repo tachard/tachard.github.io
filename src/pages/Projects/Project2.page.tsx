@@ -127,11 +127,41 @@ export function Project2(){
                     Ainsi, selon les comportements et verbatims du patient, j'ai côté les critères de succès, en ajoutant des notes, le but d'une 
                     évaluation formative étant d'obtenir de l'information pour guider la suite de la conception. <br/>
                     Pour le questionnaire de fin de test, il s'agit du SUS qui est standardisé et d'échelles de Likert afin de recueillir 
-                    l'utilisabilité perçue sur différents points, ce qui n'est pas intensif 
+                    l'utilisabilité perçue sur différents points, ce qui n'est pas intensif à traiter. <br/>
+                    A partir de ces retours, j'ai formalisé des recommandations : changements d'user flow, chox icônographiques, wording etc. et après approbation  ont pu être inclus dans la maquette.
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Organisation projet</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                    L'équipe projet est composée comme suit : côté UseConcept, 2 ingénieurs facteurs humains dont moi-même et côté client : un spécialiste clinique, un chef de projet, un ingéniur logiciel et un ingénieur QARA.
+                    Le projet s'est organisé sous forme de sprints d'un mois avec un contenu similaire : 2 semaines de design, 1 workshop en semaine 3, puis 1 semaine de design.
+                    Chaque sprint avait ses objectifs initiaux :
+                    <ul>
+                        <li>Sprint 1 : Premiers wireframes sur les points clés du user flow.</li>
+                        <li>Sprint 2 : Propositions graphiques.</li>
+                        <li>Sprint 3 et 4 : Utilisation du design graphique choisi, ajout d'écrans secondaires. Démonstration à l'équipe marketing.</li>
+                        <li>Sprint test formatifs 1 : Création du protocole de test, adaptation de la maquette au protocole. Tests utilisateurs. Modifications post-tests.</li>
+                        <li>Sprint 5 : Ajout d'écrans secondaires et quelques cas limites.</li>
+                    </ul>
+                    Ce qui s'est passé en réalité est qu'il y a eu un glissement/étalement du sprint 3 parce que les attentes et visions de chacun n'étaient pas réellement alignés. Côté client, la maquette se devait être très haute fidélité, notamment pour présenter au marketing ou aux testeurs et globalement la charge de travail a été sous-estimée.
+                    Le sprint 5 a notamment été l'occasion de tester de formaliser commercialement la portée du sprint.
+                </Text>
+            </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conclusion</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                Le projet de maquettage pour l'appareil médical a permis de moderniser l'interface tout en conservant une familiarité 
+                essentielle pour les utilisateurs existants. Grâce à une collaboration étroite entre les différentes parties prenantes et 
+                à une approche itérative basée sur des sprints, nous avons pu intégrer des fonctionnalités innovantes tout en respectant 
+                les spécifications techniques et les attentes des utilisateurs. Les tests utilisateurs ont fourni des retours précieux, 
+                permettant d'affiner la conception et d'assurer une meilleure utilisabilité. Malgré les défis rencontrés, notamment en 
+                termes de dimensionnement des tests et de simulation des interactions, le projet a atteint ses objectifs initiaux. 
+                La maquette finale, validée par l'équipe projet et les utilisateurs, est prête à être intégrée dans le prototype de 
+                l'appareil, marquant une étape significative vers la commercialisation d'une version améliorée et plus intuitive du 
+                dispositif médical.
+                </Text>
+            </Group>
         </Container>
     );
 }
