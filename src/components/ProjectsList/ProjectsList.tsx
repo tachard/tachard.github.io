@@ -26,7 +26,7 @@ let list = [
         "https://th.bing.com/th/id/OIP.4zHsIFrsgo-7xiCU-0Q3HgHaEo?rs=1&pid=ImgDetMain",
         "title": "Maquettage pour appareil médical",
         "dateDebut": new Date(2024, 3, 22),
-        "dateFin": null,
+        "dateFin": new Date(2025, 2, 22),
         "description":
         "Maquettage d'interface sur Axure pour la nouvelle itération d'un appareil médical. Evaluation formative de celle-ci et intégration de recommendations post-test.",
       "badges": [
@@ -46,7 +46,7 @@ let list = [
         "/src/assets/RemoteUserTest.jpeg",
         "title": "Evaluation sommative d'un DM",
         "dateDebut": new Date(2024, 6, 1),
-        "dateFin": null,
+        "dateFin": new Date(2024, 6, 15),
         "description":
         "Préparation, passation et analyse de résultats d'une évaluation sommative pour un appareil médical. Les tests utilisateurs se sont passées en distanciel.",
       "badges": [
@@ -81,7 +81,7 @@ let list = [
         "https://thumbs.dreamstime.com/b/summing-microsoft-excel-app-new-york-usa-september-summing-microsoft-excel-app-laptop-screen-macro-close-up-view-255441775.jpg?w=768",
         "title": "Création d'un outil d'aide aux tests",
         "dateDebut": new Date(2024, 6, 1),
-        "dateFin": null,
+        "dateFin": new Date(2025, 2, 22),
         "description":
         "Création d'un template Excel et de programmes Office Scripts pour assiter les ergonomes dans la préparation et l'analyse de tests utilisateurs.",
       "badges": [
