@@ -117,13 +117,13 @@ export function Project2(){
             <Group mb={20}>
                 <Text>
                     L'analyse des résultats était assez directe. Dans le protocole (et d'après la norme), il est défini que les comportements attendus soient côtés de la manière suivante :
-                    <ul>
-                        <li>Succès : le participant a réussi la tâche.</li>
-                        <li>Difficulté : le participant a réussi la tâche difficilement.</li>
-                        <li>Presqu'erreur : L'utilisateur a commencé à commettre une erreur mais s'est rattrapé.</li>
-                        <li>Utilisation anormale : L'utilisateur sait ce qu'il est censé faire mais agit autrement pour diverses raisons (efficacité, malhonnêteté ...).</li>
-                        <li>Échec : L'utilisateur n'a pas le comportement attendu ou il a été.</li>
-                    </ul>
+                    <List withPadding>
+                        <ListItem>Succès : le participant a réussi la tâche.</ListItem>
+                        <ListItem>Difficulté : le participant a réussi la tâche difficilement.</ListItem>
+                        <ListItem>Presqu'erreur : L'utilisateur a commencé à commettre une erreur mais s'est rattrapé.</ListItem>
+                        <ListItem>Utilisation anormale : L'utilisateur sait ce qu'il est censé faire mais agit autrement pour diverses raisons (efficacité, malhonnêteté ...).</ListItem>
+                        <ListItem>Échec : L'utilisateur n'a pas le comportement attendu ou il a été.</ListItem>
+                    </List>
                     Ainsi, selon les comportements et verbatims du patient, j'ai côté les critères de succès, en ajoutant des notes, le but d'une 
                     évaluation formative étant d'obtenir de l'information pour guider la suite de la conception. <br/>
                     Pour le questionnaire de fin de test, il s'agit du SUS qui est standardisé et d'échelles de Likert afin de recueillir 
@@ -137,13 +137,13 @@ export function Project2(){
                     L'équipe projet est composée comme suit : côté UseConcept, 2 ingénieurs facteurs humains dont moi-même et côté client : un spécialiste clinique, un chef de projet, un ingéniur logiciel et un ingénieur QARA.
                     Le projet s'est organisé sous forme de sprints d'un mois avec un contenu similaire : 2 semaines de design, 1 workshop en semaine 3, puis 1 semaine de design.
                     Chaque sprint avait ses objectifs initiaux :
-                    <ul>
-                        <li>Sprint 1 : Premiers wireframes sur les points clés du user flow.</li>
-                        <li>Sprint 2 : Propositions graphiques.</li>
-                        <li>Sprint 3 et 4 : Utilisation du design graphique choisi, ajout d'écrans secondaires. Démonstration à l'équipe marketing.</li>
-                        <li>Sprint test formatifs 1 : Création du protocole de test, adaptation de la maquette au protocole. Tests utilisateurs. Modifications post-tests.</li>
-                        <li>Sprint 5 : Ajout d'écrans secondaires et quelques cas limites.</li>
-                    </ul>
+                    <List withPadding>
+                        <ListItem>Sprint 1 : Premiers wireframes sur les points clés du user flow.</ListItem>
+                        <ListItem>Sprint 2 : Propositions graphiques.</ListItem>
+                        <ListItem>Sprint 3 et 4 : Utilisation du design graphique choisi, ajout d'écrans secondaires. Démonstration à l'équipe marketing.</ListItem>
+                        <ListItem>Sprint test formatifs 1 : Création du protocole de test, adaptation de la maquette au protocole. Tests utilisateurs. Modifications post-tests.</ListItem>
+                        <ListItem>Sprint 5 : Ajout d'écrans secondaires et quelques cas limites.</ListItem>
+                    </List>
                     Ce qui s'est passé en réalité est qu'il y a eu un glissement/étalement du sprint 3 parce que les attentes et visions de chacun n'étaient pas réellement alignés. Côté client, la maquette se devait être très haute fidélité, notamment pour présenter au marketing ou aux testeurs et globalement la charge de travail a été sous-estimée.
                     Le sprint 5 a notamment été l'occasion de tester de formaliser commercialement la portée du sprint.
                 </Text>
