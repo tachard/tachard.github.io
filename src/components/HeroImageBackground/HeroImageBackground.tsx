@@ -1,6 +1,7 @@
 import { Box, Button, Container, Image, Overlay, SimpleGrid, Stack, Text, Title } from '@mantine/core';
 import classes from './HeroImageBackground.module.css';
 import { NavLink } from 'react-router-dom';
+import profilePicture from '/src/assets/ProfilePicture.jpg';
 
 export function HeroImageBackground() {
   return (
@@ -10,7 +11,7 @@ export function HeroImageBackground() {
       <Container className={classes.inner}>
         <SimpleGrid cols={{xs:1,sm:2}} spacing="xl">
                 <Stack align='center' gap="md">
-                    <Image className={classes.profilePicture} h={200} w={200} fit="contain" src="/src/assets/ProfilePicture.jpg"/>
+                    <Image className={classes.profilePicture} h={200} w={200} fit="contain" src={profilePicture}/>
                     <Stack gap={8}>
                         <Title order={2} size="h1" className={classes.title} p={0} m={0}>Thomas Achard</Title>
                         <Title order={3} size="h2" className={classes.title} p={0} m={0}>Ingénieur cogniticien</Title>

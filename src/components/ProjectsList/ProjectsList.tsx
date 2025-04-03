@@ -1,5 +1,6 @@
 import { Container, SimpleGrid } from "@mantine/core";
 import { BadgeCardContent, BadgeCardVertical } from "../BadgeCardVetical/BadgeCardVertical";
+import remoteUserTest from "/src/assets/RemoteUserTest.jpeg";
 
 let list = [
     {
@@ -43,7 +44,7 @@ let list = [
         "id": 3,
         "projectType": "Professionnel",
         "image":
-        "/src/assets/RemoteUserTest.jpeg",
+        "https://miro.medium.com/v2/resize:fit:1400/1*o-hX7msf5Y_RXhJcq-V5Iw.png",
         "title": "Evaluation sommative d'un DM",
         "dateDebut": new Date(2024, 6, 1),
         "dateFin": new Date(2024, 6, 15),

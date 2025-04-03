@@ -2,7 +2,8 @@
 import { Anchor, Container, Grid, Group, Image, List, ListItem, NavLink, Stack, Text } from "@mantine/core";
 import classes from "./Project.module.css"
 import { BetterTitle } from "@/components/BetterTitle/BetterTitle";
-
+import Portfolio_Architecture from "/src/assets/Portfolio_Architecture.png";
+import Portfolio_Wireframe from "/src/assets/Portfolio_Wireframe.png";
 
 
 export function Project1(){
@@ -47,7 +48,7 @@ export function Project1(){
                     </Grid.Col>
                     <Grid.Col span={{xs:12, sm:4}}>
                         <Stack>
-                            <Image src="/src/assets/Portfolio_Architecture.png"/>
+                            <Image src={Portfolio_Architecture}/>
                             <Image src="https://media.nngroup.com/media/editor/2019/06/27/portfolio_web.png"/>
                         </Stack>
                     </Grid.Col>
@@ -71,7 +72,7 @@ export function Project1(){
                     avec une touche de vert.
                 </Text>
             </Group>
-            <Image mb={20} src="/src/assets/Portfolio_Wireframe.png"/>
+            <Image mb={20} src={Portfolio_Wireframe}/>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Contenus</BetterTitle>
             <Group mb={20}>
                 <Text>

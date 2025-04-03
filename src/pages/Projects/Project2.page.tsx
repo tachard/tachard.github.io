@@ -2,6 +2,8 @@
 import { Anchor, Container, Grid, Group, Image, List, ListItem, NavLink, Stack, Text } from "@mantine/core";
 import classes from "./Project.module.css"
 import { BetterTitle } from "@/components/BetterTitle/BetterTitle";
+import Maquettage_UserFlow from "/src/assets/Maquettage_UserFlow.png";
+import Maquette_UserFlowDetail from "/src/assets/Maquette_UserFlowDetail.png";
 
 export function Project2(){
     return(
@@ -51,7 +53,7 @@ export function Project2(){
                         </Text>
                     </Grid.Col>
                     <Grid.Col span={{xs:12, sm:4}}>
-                        <Image src="/src/assets/Maquettage_UserFlow.png" />
+                        <Image src={Maquettage_UserFlow} />
                     </Grid.Col>
                 </Grid>
                 <Text>
@@ -76,7 +78,7 @@ export function Project2(){
                         </Text>
                     </Grid.Col>
                     <Grid.Col span={{xs:12, sm:4}}>
-                        <Image src="/src/assets/Maquette_UserFlowDetail.png" />
+                        <Image src={Maquette_UserFlowDetail} />
                     </Grid.Col>
                 </Grid>
                 <Text>
