@@ -43,6 +43,7 @@ export function Project() {
         if (!projectComponent) {
             navigate("/");
         }
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [projectComponent, navigate]);
 
     return (

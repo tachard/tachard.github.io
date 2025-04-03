@@ -1,8 +1,13 @@
+import { useEffect }  from "react";
 import { Container, Stack, Text, Title } from "@mantine/core";
 import { CardHorizontal, CardHorizontalContent } from "@/components/CardHorizontal/CardHorizontal";
 import { BetterTitle } from "@/components/BetterTitle/BetterTitle";
 
 export function About() {
+    useEffect(()=>{
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    },[]);
+
     const WorkXpContent = [
         {
             "id": 1,
