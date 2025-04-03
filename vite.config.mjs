@@ -9,6 +9,7 @@ export default defineConfig({
       configFile: true,
     },
   }), tsconfigPaths()],
+  base: '/tachard.github.io/',
   test: {
     globals: true,
     environment: 'jsdom',
