@@ -15,10 +15,11 @@ export default defineConfig({
     setupFiles: './vitest.setup.mjs',
   },
   build: {
-    commonjsOptions: { include: [] }, // Résout les conflits de modules CommonJS
+    commonjsOptions: {
+        include: [/node_modules/],
+    }
   },
   optimizeDeps: {
-    disabled: false, // Active l'optimisation des dépendances
     include: ['lru-cache'], // Force l'inclusion explicite de la bibliothèque problématique
   },
 });
