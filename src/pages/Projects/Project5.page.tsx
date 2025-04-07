@@ -6,8 +6,9 @@ export function Project5(){
 
     const tableData = [
         {information:"Risque",spec:false,risk:true,protocole:true,recueil:false,rapport:true},
-        {information:"Contexte d'utilisation",spec:true,risk:false,protocole:true,recueil:true,rapport:true},
+        {information:"Contexte d'utilisation",spec:true,risk:false,protocole:true,recueil:false,rapport:true},
         {information:"Logistique de test",spec:false,risk:false,protocole:true,recueil:false,rapport:true},
+        {information:"Consignes de test",spec:false,risk:false,protocole:true,recueil:true,rapport:true},
         {information:"Critère de succès associé à un/des risques",spec:false,risk:false,protocole:true,recueil:true,rapport:true},
     ]
 
@@ -31,7 +32,7 @@ export function Project5(){
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Prérequis au projet</BetterTitle>
-            <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Processus existant et spécifications de l'équipe</BetterTitle>
+            <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Processus existant</BetterTitle>
             <Group mb={20}>
                 <Text>
                     Le processus existant pour créer des tests utilisateurs sommatifs est comme suit :
@@ -47,7 +48,7 @@ export function Project5(){
                     l'autre dans le système documentaire réglementaire :
                 </Text>
                 <Table.ScrollContainer minWidth={700} className={classes.tableContainer}>
-                    <Table striped highlightOnHover>
+                    <Table striped highlightOnHover stripedColor="var(--mantine-color-green-0)" highlightOnHoverColor="var(--mantine-color-green-1)">
                         <Table.Thead>
                             <Table.Tr>
                                 <Table.Th className={classes.firstCol}>Information</Table.Th>
@@ -62,39 +63,26 @@ export function Project5(){
                             {rows}
                         </Table.Tbody>
                     </Table>
-                </Table.ScrollContainer> 
+                </Table.ScrollContainer>
+                <Text>
+                    Ce phénomène de réutilisation fait que des erreurs humaines peuvent nuire à la cohérence entre les livrables : 
+                    copier-collers malheureux, oublis de changements liées aux modifications etc. C'est pour contrer cela que j'ai entrepris de développer cet outil.
+                </Text>
             </Group>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Benchmarking d'outils similaires</BetterTitle>
             <Group mb={20}>
                 <Text>
-                    Le projet étant lancé depuis plusieurs années, chaque personne de l'équipe projet chez le client avait des informations 
-                    pour définir au mieux les environnements et les utilisateurs entre les spécifications marketing, technique et réglementaires. <br/>
-                    Pour la partie environnements d'usage, il a été décidé de faire une session mapping avec un tableau blanc vierge et quelques 
-                    informations déjà mises pour susciter la participation de chacun : caractéristiques des lieux, contraintes d'espace-temps, normes ... 
-                    Un exemple intéressant qui est ressorti est que le marketing souhaitait potentiellement réclamer l'utilisation de l'appareil 
-                    à domicile mais au vu de contraintes techniques de l'appareil, la gestion des risques a pointé l'impossibilité de faire cela par 
-                    rapport aux différences de normes électriques entre établissements de santé et bâtiments domestiques. <br/>
-                    Lors d'une deuxième session, on s'est plutôt penché sur les différents utilisateurs tout au long du cycle de vie de l'appareil, découlant aussi 
-                    en partie des environnements d'utilisation. Le cycle de vie de l'appareil reprend les éléments suivants :
-                    <List withPadding>
-                        <ListItem>Transport de l'usine au lieu d'utilisation</ListItem>
-                        <ListItem>Première installation</ListItem>
-                        <ListItem>Utilisation</ListItem>
-                        <ListItem>Stockage</ListItem>
-                        <ListItem>Maintenance et réparation</ListItem>
-                        <ListItem>Mise au rebut</ListItem>
-                    </List>
-                    C'est alors une quinzaine de personas qui ont été définis ensemble, sur tout le cycle de vie. 
-                    Ces personas représentent les archétypes d'utilisateurs selon plusieurs caractéristiques :
-                    <List withPadding>
-                        <ListItem>Démographie : Sexe, âge, manualité, taille</ListItem>
-                        <ListItem>Interactions avec le dispositif</ListItem>
-                        <ListItem>Environnement d'usage et contraintes associées</ListItem>
-                        <ListItem>Besoins, peurs</ListItem>
-                        <ListItem>Patientèle</ListItem>
-                    </List>
-                    Concrètement, lors d'une deuxième session, j'ai créé des proto-personas qui ont été annotés par toute l'équipe-projet.
-                    Ensuite, ils ont été proprement rédigés.
+                    Pour étoffer cet outil et assurer un bon niveau de qualité, j'ai réalisé en premier lieu un benchmarking d'outils similaires, 
+                    similaires car le cadre est globalement le même (tests utilisateurs) mais avec certains points différenciants : 
+                    outil plus généraliste, analyse comportementale, voire outil destiné au même domaine d'activité. <br/>
+                    Le premier outil que j'ai analysé est <Anchor href="https://www.emergobyul.com/software/opus">Optimal Product Usability Suite (OPUS) d'Emergo by UL</Anchor>, leader du secteur de la usability en santé. 
+                    Ce SASS permet d'accéder à des outils liés au processus complet d'ingénierie de l'aptitude à l'utilisation : templates de documents réglementaires, calculateur de taille d'échantillon ...
+                    Une partie de ce logiciel concerne les tests utilisateurs et permet d'enregistrer les résultats de tests utilisateurs,
+                    avec des exemples de causes d'échecs ou de difficultés etc. L'avantage de cet outil est d'être vraiment guidant avec des catégories bien définies et des pré-réponses.
+                    Cependant, il s'adresse à un public plutôt profane pour être aussi guidant et paraît un peu trop rigide pour un 
+                    public plus expert. Le format SASS est aussi une excellente idée pour assurer une traçabilité centralisée 
+                    mais prendrait bien trop de temps à recoder. <br/>
+                    
                 </Text>  
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Réalisation</BetterTitle>
