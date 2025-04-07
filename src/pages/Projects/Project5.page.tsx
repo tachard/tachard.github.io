@@ -1,8 +1,26 @@
-import { Anchor, Container, Grid, Group, Image, List, ListItem, NavLink, Stack, Text } from "@mantine/core";
+import { Anchor, Container, Grid, Group, Image, List, ListItem, NavLink, Stack, Text,Table } from "@mantine/core";
 import classes from "./Project.module.css"
 import { BetterTitle } from "@/components/BetterTitle/BetterTitle";
 
 export function Project5(){
+
+    const tableData = [
+        {information:"Risque",spec:false,risk:true,protocole:true,recueil:false,rapport:true},
+        {information:"Contexte d'utilisation",spec:true,risk:false,protocole:true,recueil:true,rapport:true},
+        {information:"Logistique de test",spec:false,risk:false,protocole:true,recueil:false,rapport:true},
+        {information:"Critère de succès associé à un/des risques",spec:false,risk:false,protocole:true,recueil:true,rapport:true},
+    ]
+
+    const rows = tableData.map((element) => (
+        <Table.Tr key={element.information}>
+      <Table.Td className={classes.firstCol}>{element.information}</Table.Td>
+      <Table.Td className={classes.tableContent}>{element.spec ? "x" : ""}</Table.Td>
+      <Table.Td className={classes.tableContent}>{element.risk ? "x" : ""}</Table.Td>
+      <Table.Td className={classes.tableContent}>{element.protocole ? "x" : ""}</Table.Td>
+      <Table.Td className={classes.tableContent}>{element.recueil ? "x" : ""}</Table.Td>
+      <Table.Td className={classes.tableContent}>{element.rapport ? "x" : ""}</Table.Td>
+    </Table.Tr>
+    ))
     return(
         <Container py={120}>
             <BetterTitle align="center" mb={60} order={2} size="h1">Création d'un outil d'aide aux tests utilisateurs</BetterTitle>
@@ -16,15 +34,35 @@ export function Project5(){
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Processus existant et spécifications de l'équipe</BetterTitle>
             <Group mb={20}>
                 <Text>
-                    Les spécifications d'usage répondent aux questions suivantes :
-                    <List withPadding>
-                        <ListItem>Quel est le dispositif : à quoi ressemble-t-il, quels sont les principes sous-jacents quifont que ça marche ...</ListItem>
-                        <ListItem>Qui l'utilise où, à chaque moment du cycle de vie, de la sortie d'usine à la mise au rebut,</ListItem>
-                        <ListItem>Que sont censés faire les utilisateurs dans un usage classique.</ListItem>
+                    Le processus existant pour créer des tests utilisateurs sommatifs est comme suit :
+                    <List type="ordered" withPadding>
+                        <ListItem>Sélection des risques à tester,</ListItem>
+                        <ListItem>Rédaction du protocole de test,</ListItem>
+                        <ListItem>Relectures sucessives avec le client pour valider le protocole,</ListItem>
+                        <ListItem>Rédaction du recueil de test et matériel associé,</ListItem>
+                        <ListItem>Analyse des résultats,</ListItem>
+                        <ListItem>Rédaction du rapport de résultats.</ListItem>
                     </List>
-                    La première partie est souvent du ressort du client car cela repose sur toutes les facettes de conception : ingénierie système, UX/UI design, design industriel ... 
-                    C'est donc sur les deux parties d'après que je me suis attardé.  
-                </Text>  
+                    Ce processus se fait à partir d'une poignée d'informations et sont souvent réutilisées d'un document à 
+                    l'autre dans le système documentaire réglementaire :
+                </Text>
+                <Table.ScrollContainer minWidth={700} className={classes.tableContainer}>
+                    <Table striped highlightOnHover>
+                        <Table.Thead>
+                            <Table.Tr>
+                                <Table.Th className={classes.firstCol}>Information</Table.Th>
+                                <Table.Th className={classes.tableHead}>Spécification<br/>d'usage</Table.Th>
+                                <Table.Th className={classes.tableHead}>Analyse de risques</Table.Th>
+                                <Table.Th className={classes.tableHead}>Protocole</Table.Th>
+                                <Table.Th className={classes.tableHead}>Recueil</Table.Th>
+                                <Table.Th className={classes.tableHead}>Rapport</Table.Th>
+                            </Table.Tr>
+                        </Table.Thead>
+                        <Table.Tbody>
+                            {rows}
+                        </Table.Tbody>
+                    </Table>
+                </Table.ScrollContainer> 
             </Group>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Benchmarking d'outils similaires</BetterTitle>
             <Group mb={20}>

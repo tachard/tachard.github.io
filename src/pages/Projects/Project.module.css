@@ -1,0 +1,15 @@
+.firstCol{
+    text-align: end;
+}
+
+.tableHead {
+    text-align: center;
+}
+
+.tableContent {
+    text-align: center;
+}
+
+.tableContainer {
+    margin: 0 auto;
+}
