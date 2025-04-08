@@ -98,12 +98,32 @@ export function Project5(){
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Réalisation</BetterTitle>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Livrable</BetterTitle>
             <Group mb={20}>
+                <Grid className={classes.grid} gutter="xl">
+                <Grid.Col span={{xs:12, sm:8}}>
+                    <Text>
+                        L'outil que j'ai créé est un fichier Excel, avec plusieurs feuilles thématiques :
+                        <List type="ordered" withPadding>
+                            <ListItem>Feuille de gestion administrateur avec un quickstart et les commandes,</ListItem>
+                            <ListItem>Feuille page de garde,</ListItem>
+                            <ListItem>Feuille pour lister les risques,</ListItem>
+                            <ListItem>Feuille-maître pour lier risques, critères de succès et cotation dans des scénarios,</ListItem>
+                            <ListItem>Feuille de création de tableaux pour protocole,</ListItem>
+                            <ListItem>Feuille de création du recueil,</ListItem>
+                            <ListItem>Feuilles de report et d'analyse des résultats,</ListItem>
+                            <ListItem>Feuille de création de tableau de synthèse, pour le rapport.</ListItem>
+                        </List>
+                    </Text>
+                </Grid.Col>
+                <Grid.Col span={{xs:12, sm:4}}>
+                    <Image src=""/>
+                </Grid.Col>
+                </Grid>
                 <Text>
-                    Le troisème point des spécifications d'usage est d'aller plus précisément dans l'usage du dispositif et de modéliser concrètement 
-                    ce qui est perçu par l'utilisateur, ce qu'il en comprend et ce qu'il fait en retour. Cette manière de penser l'interaction est repris 
-                    de la norme IEC 62366-1:2015 ou d'autres travaux de facteurs humains comme la {""}<Anchor href="https://fr.wikipedia.org/wiki/Conscience_situationnelle">conscience de situation</Anchor>{""}. 
-                    À partir des spécifications marketing, techniques, use cases et développement actuel de l'appareil, j'ai pu modéliser une utilisation normale de l'appareil où se succèdent prise d'information, 
-                    cognition, action et réponse système.
+                    Autant que faire se peut, j'ai essayé de rendre cet outil le plus transparent possible, en utilisant des formules visibles de tous.
+                    Toutefois pour certaines routines plus complexes, j'ai dû programmer des scripts pour faire cela. S'est alors présenté 2 choix :
+                    faire des macros Excel qui sont intégrées dans le fichier mais qui peuvent être bloquées par les antivirus, ou faire des scripts Office
+                    qui sont intégrés dans le cloud mais qui nécessitent un accès à Internet. J'ai choisi la seconde option car elle est plus sécurisée et permet de faire des correctifs plus facilement.
+                    Ces scripts suivent la logique des feuilles et permettent de faire des tâches rébarbatives comme des copier-collers complexes ou compter des valeurs dans une zone plutôt ouverte.
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Documentation et formation</BetterTitle>
