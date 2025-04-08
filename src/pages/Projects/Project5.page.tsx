@@ -74,7 +74,7 @@ export function Project5(){
                 <Text>
                     Pour étoffer cet outil et assurer un bon niveau de qualité, j'ai réalisé en premier lieu un benchmarking d'outils similaires, 
                     similaires car le cadre est globalement le même (tests utilisateurs) mais avec certains points différenciants : 
-                    outil plus généraliste, analyse comportementale, voire outil destiné au même domaine d'activité. <br/>
+                    outil plus généraliste, analyse comportementale, voire outil destiné au même domaine d'activité. <br/><br/>
                     Le premier outil que j'ai analysé est <Anchor href="https://www.emergobyul.com/software/opus">Optimal Product Usability Suite (OPUS) d'Emergo by UL</Anchor>, leader du secteur de la usability en santé. 
                     Ce SASS permet d'accéder à des outils liés au processus complet d'ingénierie de l'aptitude à l'utilisation : templates de documents réglementaires, calculateur de taille d'échantillon ...
                     Une partie de ce logiciel concerne les tests utilisateurs et permet d'enregistrer les résultats de tests utilisateurs,
@@ -82,7 +82,17 @@ export function Project5(){
                     Cependant, il s'adresse à un public plutôt profane pour être aussi guidant et paraît un peu trop rigide pour un 
                     public plus expert. Le format SASS est aussi une excellente idée pour assurer une traçabilité centralisée 
                     mais prendrait bien trop de temps à recoder. <br/>
-                    
+                    Le second champ observé est celui des logiciels d'analyse comportementale comme <Anchor href="https://www.hotjar.com/">Hotjar</Anchor>. Ces outis sont plutôt orienté digital où, 
+                    à partir d'un test utilisateur sur écran, avec webcam, on peut analyser des tâches, voir les attracteurs/distracteurs etc. L'avantage de ces outils est de pouvoir programmer 
+                    en amont ce qu'on s'attend à voir, comment le voir et d'inclure des questions, donc de faciliter l'analyse. L'utilisation de la webcam permet aussi de lier de l'analyse d'émotions 
+                    par reconnaissance faciale. L'inconvénient, par rapport à mon contexte d'utilisation prévu, est que les tests utilisateurs ne seront pas digitaux avec un produit logiciel mais essentiellement 
+                    sur des produits physiques. <br/>
+                    La dernière catégorie d'outils est celle des outils de tests utilisateurs génériques comme <Anchor href="https://www.energy.gov/sites/prod/files/2015/09/f26/ux_test_notetaker_spreadsheet_template.xlsx">Usability Test Note Taking Spreadsheet du Département Américain de l'Energie</Anchor>.
+                    Cet outil est à destination d'un public plus averti et prend la forme d'un fichier Excel, donc facilement 
+                    partageable, avec des feuilles thématiques : population, tâches, analyse de résultats, questionnaire post-test ...
+                    L'avantage est le format Excel, que tout le monde connaît,avec les différentes feuilles thématiques qui organisent le workflow et les possibilités permises par les formules.<br/><br/>
+                    En somme, ces outils m'ont permis de me rendre compte que l'outil que je souhaitais créer devait être un mélange entre
+                    un outil de type Excel, avec des feuilles thématiques et des formules, un outil de type OPUS, comme une boîte à outils et prenant en compte les spécificités du contexte d'utilisation et un outil d'analyse comportemantale, qui permette d'effectuer le suivi du test à 360°.
                 </Text>  
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Réalisation</BetterTitle>
