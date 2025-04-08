@@ -27,8 +27,14 @@ export function Project5(){
             <BetterTitle align="center" mb={60} order={2} size="h1">Création d'un outil d'aide aux tests utilisateurs</BetterTitle>
             <Group>
                 <Text mb={60}>
-                    Dans un souci de fiabilisation des livrables, de gain d'efficacité autour des tests utilisateurs, une opportunité s'est présentée à moi 
-                    d'agir sur certains painpoints que l'on retrouve dans le processus de préparation, passation et analyse de tests utilisateurs.
+                Dans le cadre de l'amélioration continue des processus de tests utilisateurs, j'ai identifié 
+                plusieurs défis récurrents qui affectent la fiabilité et l'efficacité des livrables. J'ai donc 
+                développé un outil innovant pour optimiser la préparation, la passation et l'analyse des 
+                tests utilisateurs. Ce projet vise à réduire les erreurs humaines et à garantir une meilleure 
+                cohérence entre les documents produits. L'outil, sous forme d'un fichier Excel structuré en 
+                plusieurs feuilles thématiques, intègre des scripts pour automatiser les tâches répétitives et 
+                complexes, tout en offrant une documentation complète et des formations pour faciliter sa prise 
+                en main par les utilisateurs.
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={30} order={3} size="h2">Prérequis au projet</BetterTitle>
@@ -39,7 +45,7 @@ export function Project5(){
                     <List type="ordered" withPadding>
                         <ListItem>Sélection des risques à tester,</ListItem>
                         <ListItem>Rédaction du protocole de test,</ListItem>
-                        <ListItem>Relectures sucessives avec le client pour valider le protocole,</ListItem>
+                        <ListItem>Relectures successives avec le client pour valider le protocole,</ListItem>
                         <ListItem>Rédaction du recueil de test et matériel associé,</ListItem>
                         <ListItem>Analyse des résultats,</ListItem>
                         <ListItem>Rédaction du rapport de résultats.</ListItem>
@@ -127,18 +133,23 @@ export function Project5(){
                 </Text>
             </Group>
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Documentation et formation</BetterTitle>
-            <BetterTitle align="flex-start" mb={30} order={3} size="h2">Vers une version 2</BetterTitle>
-            <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Capitaliser les retours d'expérience</BetterTitle>
-            <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Produire cette nouvelle itération</BetterTitle>
-            <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conclusion</BetterTitle>
             <Group mb={20}>
                 <Text>
-                    La co-construction des spécifications d'usage pour ce dispositif médical a été un processus enrichissant et collaboratif, 
-                    impliquant diverses expertises au sein de l'équipe projet. En définissant précisément les environnements d'utilisation et 
-                    en créant des personas détaillés, nous avons pu anticiper les besoins et les contraintes des utilisateurs tout au long du 
-                    cycle de vie de l'appareil. La modélisation du parcours utilisateur, inspirée par divers travaux antérieurs (internes ou de recherche), 
-                    a permis de garantir une interaction fluide et sécurisée avec le dispositif et de nourrir la partie usability de l'analyse des risques. 
-                    Ce travail collectif a posé les bases solides nécessaires pour répondre aux exigences réglementaires.
+                    En plus de l'outil, j'ai créé du matériel de documentation et formation, afin que tous les utilisateurs puissent le prendre en main plus facilement.
+                    J'ai créé un quickstart, qui est une feuille de gestion administrateur, avec les commandes et les macros à utiliser.
+                    J'ai aussi créé un manuel plus exhaustif qui reprend des questions fréquentes, comme utiliser l'outil, mais aussi comment maintenir l'outil dans le temps.
+                    De plus, à la sortie de la version 1, j'ai organisé une formation pour les utilisateurs de l'outil, afin de leur montrer comment l'utiliser et répondre à leurs questions.
+                </Text>
+            </Group>
+            <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conclusion : Vers une version 2</BetterTitle>
+            <Group mb={20}>
+                <Text>
+                    Après la première version de l'outil, j'ai pris le temps de récolter les retours d'expérience des utilisateurs, sur 3-4 mois et une dizaine de projets, 
+                    afin de savoir ce qui avait bien fonctionné et ce qui pouvait être amélioré. J'ai aussi pris le temps de faire un retour d'expérience sur mon propre travail, 
+                    afin d'adapter l'outil à ma vision plus précise de mon travail d'ergonome aussi. Plusieurs points sont remontés : Tout d'abord, des correctifs urgents ont été mis en place pour résoudre des bugs et cas limites inconnus.
+                    Le second point, qui a été un peu sous-estimé est la partie "rendu" de l'outil comme livrable et notamment tout ce qui est mise en forme d'Excel pour impression PDF.
+                    J'ai pu me renseigner sur les fonctions présentes dans Excel pour faire cela et les partager. Enfin quelques fonctionnalités confort étaient manquantes : renommer les participants, inclure plusieurs risques pour un même critère de succès ... 
+                    La prodution de la version 2 s'est faite suite à ces retours d'expérience.
                 </Text>
             </Group>
         </Container>
