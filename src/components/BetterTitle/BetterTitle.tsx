@@ -13,8 +13,8 @@ interface CustomTitleProps {
 
 export function BetterTitle({align,mb,pb,order,size,children}:CustomTitleProps) {
     return(
-        <Stack align={align} className={classes.title} pb={pb ? pb : 20} mb={mb}>
-            <Title order={order} size={size}>{children}</Title>
+        <Stack align={align} className={classes.title} pb={pb ? pb : 10} mb={mb}>
+            <Title ta={align==="center" ? align : undefined} order={order} size={size}>{children}</Title>
         </Stack>
     );
 }
