@@ -1,6 +1,7 @@
 import { Anchor, Container, Grid, Group, Image, List, ListItem, NavLink, Stack, Text,Table } from "@mantine/core";
 import classes from "./Project.module.css"
 import { BetterTitle } from "@/components/BetterTitle/BetterTitle";
+import Outil_RiskList from "@/assets/Outil_RiskList.png";
 
 export function Project5(){
 
@@ -105,7 +106,7 @@ export function Project5(){
             <BetterTitle align="flex-start" mb={20} pb={5} order={4} size="h3">Livrable</BetterTitle>
             <Group mb={20}>
                 <Grid className={classes.grid} gutter="xl">
-                <Grid.Col span={{xs:12, sm:8}}>
+                <Grid.Col span={{xs:12, sm:6}}>
                     <Text>
                         L'outil que j'ai créé est un fichier Excel, avec plusieurs feuilles thématiques :
                         <List type="ordered" withPadding>
@@ -120,8 +121,12 @@ export function Project5(){
                         </List>
                     </Text>
                 </Grid.Col>
-                <Grid.Col span={{xs:12, sm:4}}>
-                    <Image src=""/>
+                <Grid.Col span={{xs:12, sm:6}}>
+                    <Image src={Outil_RiskList}
+                    alt="Une capture d'écran du logiciel LibreOffice Calc.
+                    Celle-ci montre un tableau avec 4 colonnes : identifiant de risque, sévérité, description et la liste des scénarios dans lesquels le risque apparaît.
+                    Un bouton permet de remplir automatiquement cette dernière colonne." />
+                    <Text ta="center" size="xs" c="dimmed">Extrait de la feuille de sélection des risques</Text>
                 </Grid.Col>
                 </Grid>
                 <Text>
