@@ -1,6 +1,7 @@
-import { Anchor, Container, Grid, Group, Image, List, ListItem, NavLink, Stack, Text } from "@mantine/core";
+import { Anchor, Container, Grid, Group, Image, List, ListItem, NavLink, Stack, Text, Blockquote } from "@mantine/core";
 import classes from "./Project.module.css"
 import { BetterTitle } from "@/components/BetterTitle/BetterTitle";
+import { IconInfoCircle } from '@tabler/icons-react';
 
 export function Project6(){
     return(
@@ -10,14 +11,15 @@ export function Project6(){
             <Text mb={60}>
                 Dans le cadre de mes études à l'ENSC, en spécialisation "Augmentation, Autonomie et Handicap", 
                 j'ai dû réaliser un audit complet d'accessibilité RGAA du <Anchor href="https://ensc.bordeaux-inp.fr/fr">site de l'école</Anchor>{" "} 
-                en utilisant l'outil <Anchor href="https://ara.numerique.gouv.fr/">ARA</Anchor>.
+                en utilisant l'outil <Anchor href="https://ara.numerique.gouv.fr/">ARA</Anchor>. Le RGAA est la norme française de référence pour améliorer
+                l'accessibilité des sites internet,au profit des personnes en situation de handicap, mais aussi du tout public.
             </Text>
         </Group>
         <BetterTitle align="flex-start" mb={30} order={3} size="h2">Cadrer l'audit</BetterTitle>
         <Group mb={20}>
             <Text>
                 En premier lieu, il est possible de dimensionner l'effort fait pour l'audit en ne testant que certains critères ou tous. 
-                Le cours imposait de faire un audit complet dnc les 106 critères ont été testés. Dans ce cas, il est alors possible d'extraire 
+                Le cours imposait de faire un audit complet donc les 106 critères ont été testés. Dans ce cas, il est alors possible d'extraire 
                 un taux de conformité, puis de faire les déclarations réglementaires.<br/>
                 Ensuite, il faut constituter l'échantillon de pages à faire. Là encore, le RGAA donne la liste minimale des sites à auditer :
                 <List withPadding>
@@ -40,17 +42,34 @@ export function Project6(){
         <BetterTitle align="flex-start" mb={30} order={3} size="h2">Réaliser l'audit</BetterTitle>
         <Group mb={20}>
             <Text>
-                
-            </Text>  
+                La réalisation de l'audit s'est faite manuellement à deux personnes, sur les sept pages nécessaires.
+                En effet, pas mal de critères sont accompagnés de tests par exemple :
+            </Text>
+            <Blockquote color="green" cite="– Méthodologie de test 1.1.1 du RGAA" icon={<IconInfoCircle/>} mt="xl">
+                <List withPadding type="ordered">
+                    <ListItem>Retrouver dans le document les images structurées au moyen d’un élément {"<img>"} ou d’un élément possédant l’attribut WAI-ARIA role="img" ;</ListItem>
+                    <ListItem>Pour chaque image, déterminer si l’image est porteuse d’information ;</ListItem>
+                    <ListItem>Dans le cas où il s’agit d’un élément {"<img>"}, vérifier que l’image est pourvue au moins d’une alternative textuelle ;</ListItem>
+                    <ListItem>Dans le cas où il s’agit d’un élément possédant l’attribut WAI-ARIA role="img", vérifier que l’image est pourvue au moins d’une alternative textuelle ;</ListItem>
+                    <ListItem>Si au moins une alternative textuelle est trouvée, le test est validé.</ListItem>
+                </List>
+            </Blockquote>
+            <Text>
+                Le test précédent laisse place alors à la possibilité de collaboration humain-machine où un logiciel 
+                pourrait faire remonter les images et l'humain détermine en contexte si elles sont porteuses de sens.
+                Ce genre d'outils aurait vraiment été un bon levier de productivité. <br/>
+                Toutefois tous les critères ne sont pas aussi simples à tester. Notamment tout ce qui concerne les technologies d'assistance
+                ne me semblent pas vérifiables autrement que par un humain.<br/>
+            </Text>
         </Group>
         <BetterTitle align="flex-start" mb={30} order={3} size="h2">Conclusion</BetterTitle>
         <Group mb={20}>
             <Text>
-                Le troisème point des spécifications d'usage est d'aller plus précisément dans l'usage du dispositif et de modéliser concrètement 
-                ce qui est perçu par l'utilisateur, ce qu'il en comprend et ce qu'il fait en retour. Cette manière de penser l'interaction est repris 
-                de la norme IEC 62366-1:2015 ou d'autres travaux de facteurs humains comme la {""}<Anchor href="https://fr.wikipedia.org/wiki/Conscience_situationnelle">conscience de situation</Anchor>{""}. 
-                À partir des spécifications marketing, techniques, use cases et développement actuel de l'appareil, j'ai pu modéliser une utilisation normale de l'appareil où se succèdent prise d'information, 
-                cognition, action et réponse système.
+                L'audit a été réalisé avec succès, et il a permis de mettre en lumière les points d'amélioration possibles du site de l'école. 
+                Normalement, ces points seraient transmis à l'équipe de développement web, afin d'être organisé dans un backlog et dans le schéma pluriannuel 
+                de mise en accessibilité du site. De plus la déclaration d'accessibilité aurait dû être rédigé. Dans le cadre de l'exercice scolaire, le projet s'est arrêté avant. <br/>
+                Il vient alors se poser la question de la complétude des tests. En effet, le RGAA se base sur une sous-partie des normes WCAG et EN 301 549. 
+                Toutefois ce dernier est plus complet, en comprenant par exemple les matériels, un peu comme le résent RAMMU Luxembourgeois.
             </Text>
         </Group>
     </Container>
